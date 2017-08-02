@@ -5,6 +5,8 @@
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
+@import "fonts/fslucas";
+
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
@@ -17,3 +19,7 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
+// SMACSS modules
+@import "modules/page-header";
+@import "modules/block";

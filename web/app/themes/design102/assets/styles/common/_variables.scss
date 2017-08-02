@@ -1,6 +1,15 @@
+// Options
+$enable-rounded: false;
+
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #27ae60;
+$brand-primary:         #EB6600;
+
+// Fonts
+$font-family-sans-serif: "fslucas", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+// Jumbotron
+//$jumbotron-padding:              4rem;

@@ -1,0 +1,34 @@
+.page-header {
+  @extend .jumbotron;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../images/static/case-study-header.jpg');
+
+  // Make text elements appear over the &:after overlay
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  // Heading should be bold
+  > h1 {
+    font-weight: bold;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+  }
+}

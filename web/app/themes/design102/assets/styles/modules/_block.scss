@@ -1,0 +1,15 @@
+.block {
+  outline: 1px solid red;
+  width: 50%;
+}
+
+.block--image {
+  > img {
+    max-width: 100%;
+  }
+}
+
+.block--text {
+  background-color: $gray-lighter;
+  padding: 2rem;
+}
