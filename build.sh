@@ -33,9 +33,9 @@ composer install
 
 # Build theme assets
 cd web/app/themes/design102
-npm install -g bower grunt-cli && echo "{ \"allow_root\": true }" > /root/.bowerrc
-npm install && bower install
-grunt build
+npm install -g bower gulp-cli && echo "{ \"allow_root\": true }" > /root/.bowerrc
+npm install
+npm run build
 
 # Remove node_modules to (drastically) reduce image size
 rm -Rf node_modules
