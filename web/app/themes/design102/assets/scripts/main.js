@@ -77,8 +77,9 @@
 })(jQuery); // Fully reference jQuery after this point.
 
 jQuery(document).ready(function($) {
-  $('.masonry-layout').masonry({
-    itemSelector: '.block'
+  $('.l-masonry').masonry({
+    itemSelector: '.l-masonry__item',
+    gutter: 0,
+    transitionDuration: 0
   });
-
 });
