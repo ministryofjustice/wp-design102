@@ -5,10 +5,20 @@
   color: #fff;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  margin: 0;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 
   background-position: center center;
   background-size: cover;
-  background-image: url('../images/static/case-study-header.jpg');
 
   // Make text elements appear over the &:after overlay
   > * {

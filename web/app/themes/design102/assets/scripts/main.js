@@ -78,8 +78,16 @@
 
 jQuery(document).ready(function($) {
   $('.l-masonry').masonry({
-    itemSelector: '.l-masonry__item',
-    gutter: 0,
-    transitionDuration: 0
+    itemSelector: '.l-masonry__item'
   });
+});
+
+jQuery(window).on('load', function() {
+  var $ = jQuery;
+  // Redraw the masonry grid once all page elements have finished loading
+  $('.l-masonry').masonry('layout');
+});
+
+jQuery('.collapse').on('shown.bs.collapse hidden.bs.collapse', function() {
+  jQuery('.l-masonry').masonry('layout');
 });
