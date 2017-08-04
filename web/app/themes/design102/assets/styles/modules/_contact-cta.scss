@@ -1,0 +1,34 @@
+.contact-cta {
+  @extend .jumbotron;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 0;
+
+  @include media-breakpoint-up(sm) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  background: $black url('../images/static/contact-cta-bg.jpg') no-repeat top center;
+  background-size: cover;
+
+  // Make text elements appear over the &:after overlay
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /*&:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+  }*/
+}

@@ -76,9 +76,9 @@ use Roots\Sage\Extras;
     </div>
 </div>
 
-<div class="jumbotron">
-    <p>Good design starts, begins and ends with conversation.</p>
-    <a href="#" class="btn btn-outline-primary btn-lg">Get In Touch</a>
+<div class="contact-cta">
+    <p class="lead">Good design starts, begins and ends with conversation.</p>
+    <a href="#" class="btn btn-outline-white btn-lg">Get In Touch</a>
 </div>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
