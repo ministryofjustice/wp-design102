@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
-    "masonry": "^4.2.0"
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta"
   }
 }

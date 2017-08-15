@@ -12,24 +12,24 @@ use Roots\Sage\Extras;
     <div class="lead">Department for Envrionment &amp; Rural Affairs</div>
 </header>
 
-<div class="l-masonry">
-    <div class="l-masonry__item">
+<div class="l-content-blocks">
+    <div class="l-content-blocks__item">
         <div class="block block--image">
             <img src="<?= Extras\asset_url('images/static/case-study-image-1.jpg') ?>" width="570" height="480">
         </div>
     </div>
-    <div class="l-masonry__item">
+    <div class="l-content-blocks__item">
         <div class="block block--text">
             <h2 class="block__heading"><span>Challenge</span></h2>
             <p>Inform the public about the new 5p charge for single-use carrier bags.</p>
         </div>
     </div>
-    <div class="l-masonry__item">
+    <div class="l-content-blocks__item">
         <div class="block block--image">
             <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" width="570" height="480">
         </div>
     </div>
-    <div class="l-masonry__item">
+    <div class="l-content-blocks__item">
         <div class="block block--text">
             <h2 class="block__heading"><span>Solution</span></h2>
             <p>We designed a simple bag logo to act as a visual reminder. The designs developed from it were easy for retailers to use in store and cost-effective to produce, meaning that they could reach a wide audience across a variety of platforms.</p>
@@ -48,7 +48,7 @@ use Roots\Sage\Extras;
             </div>
         </div>
     </div>
-    <div class="l-masonry__item">
+    <div class="l-content-blocks__item">
         <blockquote class="block block--testimonial">
             <p>“The brand developed by D102 was almost universally adopted by smaller shops&hellip;”</p>
             <footer>
@@ -57,19 +57,19 @@ use Roots\Sage\Extras;
             </footer>
         </blockquote>
     </div>
-    <div class="l-masonry__item">
+    <div class="l-content-blocks__item">
         <div class="block block--image">
             <img src="<?= Extras\asset_url('images/static/case-study-image-3.png') ?>" width="570" height="480">
         </div>
     </div>
-    <div class="l-masonry__item">
+    <div class="l-content-blocks__item">
         <div class="block block--text block--text--light" style="background-color: #75B837;">
             <h2 class="block__heading"><span>Impact</span></h2>
             <p>Our assets were displayed in shops across the country, including in John Lewis and ASDA.</p>
             <p>The number of single-use plastic bags used by shoppers in England has reduced by 85%.</p>
         </div>
     </div>
-    <div class="l-masonry__item">
+    <div class="l-content-blocks__item">
         <div class="block block--image">
             <img src="<?= Extras\asset_url('images/static/case-study-image-4.jpg') ?>" width="570" height="480">
         </div>
@@ -80,5 +80,3 @@ use Roots\Sage\Extras;
     <p class="lead">Good design starts, begins and ends with conversation.</p>
     <a href="#" class="btn btn-outline-white btn-lg">Get In Touch</a>
 </div>
-
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
