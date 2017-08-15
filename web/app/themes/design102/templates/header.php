@@ -1,9 +1,9 @@
-<nav class="navbar navbar-toggleable-md fixed-top navbar-light">
+<nav class="navbar navbar-expand-md fixed-top navbar-light">
     <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php //bloginfo('name'); ?><strong>design</strong>102</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php //bloginfo('name'); ?><strong>design</strong>102</a>
         <div class="collapse navbar-collapse flex-row-reverse" id="navbarCollapse">
             <?php
             if (has_nav_menu('primary_navigation')) :
