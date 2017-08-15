@@ -1,9 +1,9 @@
-.l-masonry {
+.l-content-blocks {
   @extend .row;
   margin-top: ( $grid-gutter-width / 2 );
   margin-bottom: ( $grid-gutter-width / 2 );
 
-  > .l-masonry__item {
+  > .l-content-blocks__item {
     @extend .col-sm-6;
     margin-top: ( $grid-gutter-width / 2 );
     margin-bottom: ( $grid-gutter-width / 2 );

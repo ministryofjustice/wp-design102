@@ -79,32 +79,4 @@
 (function() {
   var $ = jQuery;
 
-  $(document).ready(function() {
-    $('.l-masonry').masonry({
-      itemSelector: '.l-masonry__item'
-    });
-  });
-
-  $(window).on('load', function() {
-    // Redraw the masonry grid once all page elements have finished loading
-    $('.l-masonry').masonry('layout');
-  });
-
-  $('.collapse').
-    on('show.bs.collapse', function(e) {
-      var collapseContainer = $(e.target);
-      collapseContainer.addClass('show');
-      collapseContainer.parents('.l-masonry').masonry('layout');
-      collapseContainer.removeClass('show');
-    }).
-    on('hide.bs.collapse', function(e) {
-      var collapseContainer = $(e.target);
-      collapseContainer.removeClass('show');
-      collapseContainer.parents('.l-masonry').masonry('layout');
-      collapseContainer.addClass('show');
-    }).
-    on('shown.bs.collapse hidden.bs.collapse', function() {
-      $('.l-masonry').masonry('layout');
-    });
-
 })();
