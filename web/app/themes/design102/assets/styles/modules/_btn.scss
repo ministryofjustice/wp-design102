@@ -3,5 +3,5 @@
  */
 
 .btn-outline-white {
-  @include button-outline-variant($white, $gray-dark);
+  @include button-outline-variant($white, $gray-800);
 }

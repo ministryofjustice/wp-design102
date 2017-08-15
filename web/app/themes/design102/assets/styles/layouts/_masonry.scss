@@ -1,11 +1,11 @@
 .l-masonry {
   @extend .row;
-  margin-top: ( $grid-gutter-width-base / 2 );
-  margin-bottom: ( $grid-gutter-width-base / 2 );
+  margin-top: ( $grid-gutter-width / 2 );
+  margin-bottom: ( $grid-gutter-width / 2 );
 
   > .l-masonry__item {
     @extend .col-sm-6;
-    margin-top: ( $grid-gutter-width-base / 2 );
-    margin-bottom: ( $grid-gutter-width-base / 2 );
+    margin-top: ( $grid-gutter-width / 2 );
+    margin-bottom: ( $grid-gutter-width / 2 );
   }
 }
