@@ -1,5 +1,9 @@
 // .block { }
 
+.block {
+  visibility: visible;
+}
+
 .block__heading {
   > span {
     border-bottom: 3px solid currentColor;
