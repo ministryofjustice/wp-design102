@@ -6,9 +6,11 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Fonts
-//$font-size-base: 1.125rem;
-//$font-family-sans-serif: "fslucas", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$headings-font-family:   "fslucas", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: "fsme", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$h1-font-size: 3.4375rem; // 55px
+$headings-font-weight: bold;
+$font-size-lg:   1.5rem; // 24px
+$lead-font-size: $font-size-lg;
 
 //
 // Color system
@@ -81,3 +83,8 @@ $theme-colors: (
   light: $gray-100,
   dark: $gray-800
 );
+
+// Navbar
+$navbar-light-color:                $black;
+$navbar-light-hover-color:          $black;
+$navbar-light-active-color:         $black;

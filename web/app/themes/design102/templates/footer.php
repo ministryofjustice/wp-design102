@@ -10,15 +10,17 @@ use Roots\Sage\Extras;
 
     <div class="row">
         <div class="col-12 col-sm-6 col-md-3">
-            Copyright &copy; <?= date('Y') ?> DESIGN102
+            &copy; <?= date('Y') ?> design102
         </div>
         <div class="col-12 col-sm-6 col-md-3">
-            102 Petty France<br/>
-            London SW1H 9AJ, UK
+            <a href="https://www.google.co.uk/maps/search/?api=1&query=DESIGN102&query_place_id=ChIJK_1a_dsEdkgR0s543WeZqoI">
+              102 Petty France<br/>
+              London SW1H 9AJ, UK
+            </a>
         </div>
         <div class="col-12 col-sm-6 col-md-3">
-            info@design102.gov.uk<br/>
-            +44 (0)20 3334 6222
+            <a href="mailto:info@design102.gov.uk">info@design102.gov.uk</a><br/>
+            <a href="tel:+4402033346222">+44 (0)20 3334 6222</a>
         </div>
         <div class="col-12 col-sm-6 col-md-3">
             Follow us on:

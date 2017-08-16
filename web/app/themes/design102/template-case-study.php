@@ -47,9 +47,28 @@ use Roots\Sage\Extras;
   </div>
   <div class="row">
     <div class="col">
-      <div class="contact-cta">
-        <p class="lead">Good design starts, begins and ends with conversation.</p>
-        <a href="#" class="btn btn-outline-white btn-lg">Get In Touch</a>
+      <div class="text-block" style="background-color: #75B837; color: #fff">
+        <div class="text-block__content">
+          <p>Our assets were displayed in shops across the country,
+            including in John Lewis and ASDA.</p>
+          <p>The number of single-use plastic bags used by shoppers in England has reduced by 85%.</p>
+
+          <blockquote class="testimonial">
+            <p>“The brand developed by D102 was almost universally adopted by smaller shops&hellip;”</p>
+            <footer>
+              <div class="person">Drew Morris, Head of Capability and Learning</div>
+              <div class="org">Ministry of Justice</div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="call-to-action-block">
+        <p>Great design starts with a conversation</p>
+        <a href="#" class="btn btn-outline-white btn-lg">Get in touch</a>
       </div>
     </div>
   </div>

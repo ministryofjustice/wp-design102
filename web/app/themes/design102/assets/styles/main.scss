@@ -5,13 +5,12 @@
 @import "../../bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
-@import "fonts/fslucas";
+@import "fonts/fsme";
 
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
-@import "components/grid";
 @import "components/wp-classes";
 @import "layouts/header";
 @import "layouts/sidebar";
@@ -23,10 +22,12 @@
 // SMACSS modules
 @import "layouts/blocks";
 @import "modules/page-header";
-@import "modules/contact-cta";
+@import "modules/navbar";
 @import "modules/btn";
 @import "modules/site-footer";
 @import "modules/social-icon";
+@import "modules/testimonial";
 @import "modules/block";
 @import "modules/blocks/image";
 @import "modules/blocks/text";
+@import "modules/blocks/call-to-action";

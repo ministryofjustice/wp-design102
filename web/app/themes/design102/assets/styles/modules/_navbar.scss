@@ -1,0 +1,31 @@
+/**
+ * We have to be specific with our selectors here to overwrite bootstrap
+ */
+.navbar-light {
+  background-color: rgba($white, 0.95);
+
+  .navbar-nav {
+    .nav-link {
+      font-size: 1.375rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-transform: lowercase;
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1rem;
+        right: 1rem;
+        border-bottom: 3px solid $navbar-light-active-color;
+      }
+    }
+  }
+}
