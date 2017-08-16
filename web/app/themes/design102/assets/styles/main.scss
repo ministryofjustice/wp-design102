@@ -21,10 +21,12 @@
 @import "layouts/tinymce";
 
 // SMACSS modules
-@import "layouts/content-blocks";
+@import "layouts/blocks";
 @import "modules/page-header";
 @import "modules/contact-cta";
-@import "modules/block";
 @import "modules/btn";
 @import "modules/site-footer";
 @import "modules/social-icon";
+@import "modules/block";
+@import "modules/blocks/image";
+@import "modules/blocks/text";

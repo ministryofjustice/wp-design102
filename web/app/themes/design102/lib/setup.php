@@ -44,6 +44,8 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
   add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
 
+  add_theme_support('admin-bar', ['callback' => __NAMESPACE__ . '\\admin_bar_bump']);
+
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
   add_editor_style(Assets\asset_path('styles/main.css'));
@@ -104,3 +106,16 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+/**
+ * Admin Bar Bump
+ * WordPress adds margin to the html element when the admin bar is showing.
+ * We also need that margin on the navbar element, so we're tweaking
+ * the default styling to add it.
+ */
+function admin_bar_bump() {
+  ob_start();
+  _admin_bar_bump_cb();
+  $bump = ob_get_clean();
+  echo str_replace('html {', 'html, .navbar.fixed-top {', $bump);
+}

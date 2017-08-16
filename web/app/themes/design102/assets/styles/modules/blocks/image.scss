@@ -1,0 +1,8 @@
+.image-block {
+  @extend .block;
+
+  > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
