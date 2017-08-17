@@ -56,7 +56,10 @@
       "php -r \"copy('.env.example', '.env');\""
     ],
     "test": [
-      "vendor/bin/phpcs"
+      "vendor/bin/phpcs -n -s --extensions=php"
+    ],
+    "phpcbf": [
+      "vendor/bin/phpcbf -n --extensions=php"
     ]
   }
 }
