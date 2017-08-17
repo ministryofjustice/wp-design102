@@ -79,4 +79,6 @@
 (function() {
   var $ = jQuery;
 
+  $('.case-studies-carousel').slick();
+
 })();
