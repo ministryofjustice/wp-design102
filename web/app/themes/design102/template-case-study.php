@@ -67,22 +67,85 @@ use Roots\Sage\Extras;
   <div class="row">
     <div class="col">
       <div class="call-to-action-block">
-        <p>Great design starts with a conversation</p>
+        <p class="lead">Great design starts with a conversation</p>
         <a href="#" class="btn btn-outline-white btn-lg">Get in touch</a>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <div class="case-studies-carousel">
-        <div>Slide 1</div>
-        <div>Slide 2</div>
-        <div>Slide 3</div>
-        <div>Slide 4</div>
-        <div>Slide 5</div>
-        <div>Slide 6</div>
-        <div>Slide 7</div>
-        <div>Slide 8</div>
+      <div class="other-projects-block">
+        <h2>Other projects</h2>
+        <div class="carousel">
+          <ul class="carousel__slides">
+            <li>
+              <a href="#" class="carousel__thumb">
+                <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
+                <div class="overlay">
+                  Department for Business, Energy and Industrial Strategy
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="carousel__thumb">
+                <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
+                <div class="overlay">
+                  Department for Business, Energy and Industrial Strategy
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="carousel__thumb">
+                <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
+                <div class="overlay">
+                  Department for Business, Energy and Industrial Strategy
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="carousel__thumb">
+                <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
+                <div class="overlay">
+                  Department for Business, Energy and Industrial Strategy
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="carousel__thumb">
+                <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
+                <div class="overlay">
+                  Department for Business, Energy and Industrial Strategy
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="carousel__thumb">
+                <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" />
+                <div class="overlay">
+                  Department for Business, Energy and Industrial Strategy
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="carousel__thumb">
+                <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" />
+                <div class="overlay">
+                  Department for Business, Energy and Industrial Strategy
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="carousel__thumb">
+                <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" />
+                <div class="overlay">
+                  Department for Business, Energy and Industrial Strategy
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="carousel__prev"><svg><use xlink:href="<?= Extras\asset_url('images/carousel-arrows.svg#left') ?>" /></svg></a>
+          <a href="#" class="carousel__next"><svg><use xlink:href="<?= Extras\asset_url('images/carousel-arrows.svg#right') ?>" /></svg></a>
+        </div>
       </div>
     </div>
   </div>

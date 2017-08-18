@@ -79,6 +79,36 @@
 (function() {
   var $ = jQuery;
 
-  $('.case-studies-carousel').slick();
+  $('.carousel').each(function(i, carousel) {
+    $(carousel).find('.carousel__slides').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      nextArrow: $(carousel).find('.carousel__next'),
+      prevArrow: $(carousel).find('.carousel__prev'),
+      dots: false,
+      responsive: [
+        {
+          // bootstrap lg
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          // bootstrap md
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: true,
+            nextArrow: false,
+            prevArrow: false
+          }
+        }
+      ]
+    });
+  });
+
 
 })();
