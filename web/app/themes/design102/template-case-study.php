@@ -16,6 +16,16 @@ use Roots\Sage\Extras;
 <div class="l-blocks">
   <div class="row">
     <div class="col">
+      <div class="video-block">
+        <?php
+        $oembed = wp_oembed_get('https://www.youtube.com/watch?v=YE7VzlLtp-4');
+        echo Extras\unbrand_youtube_iframe($oembed);
+        ?>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
       <div class="image-block">
         <img src="<?= Extras\asset_url('images/static/case-study-image-1.jpg') ?>" width="1173" height="480">
       </div>
