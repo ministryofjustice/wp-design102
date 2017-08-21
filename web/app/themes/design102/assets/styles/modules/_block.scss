@@ -1,57 +1,10 @@
 // .block { }
 
-.block {
-  visibility: visible;
-}
-
 .block__heading {
   > span {
     border-bottom: 3px solid currentColor;
     padding: 0 0 0.2em 0;
     margin: 0 0 0.2em 0;
     display: inline-block;
-  }
-}
-
-.block--image {
-  > img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.block--text {
-  background-color: $gray-200;
-  padding: 2rem;
-
-  @include media-breakpoint-up(md) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
-.block--text--light {
-  color: $white;
-}
-
-.block--testimonial {
-  @extend .block--text;
-  margin: 0;
-
-  > p {
-    font-size: 1.875rem;
-  }
-
-  > footer {
-    border-top: 3px solid currentColor;
-    padding-top: 0.625rem;
-    margin-top: 3rem;
-
-    > .person {
-      font-weight: bold;
-    }
-
-    > .org {
-      font-weight: 300;
-    }
   }
 }
