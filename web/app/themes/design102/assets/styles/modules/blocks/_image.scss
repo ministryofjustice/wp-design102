@@ -1,6 +1,10 @@
 .image-block {
-  > img {
+  img {
     max-width: 100%;
     height: auto;
+  }
+
+  a {
+    display: block;
   }
 }
