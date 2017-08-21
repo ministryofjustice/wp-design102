@@ -100,6 +100,19 @@ use Roots\Sage\Extras;
   </div>
   <div class="row">
     <div class="col">
+      <div class="testimonial-block">
+        <blockquote class="testimonial">
+          <p>“The brand developed by D102 was almost universally adopted by smaller shops&hellip;”</p>
+          <footer>
+            <div class="person">Drew Morris, Head of Capability and Learning</div>
+            <div class="org">Ministry of Justice</div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
       <div class="call-to-action-block">
         <p class="lead">Great design starts with a conversation</p>
         <a href="#" class="btn btn-outline-white btn-lg">Get in touch</a>
