@@ -10,8 +10,15 @@
     padding-right: 2rem;
   }
 
-  > .text-block__content {
+  .text-block__content {
     max-width: 570px;
     margin: 0 auto;
+  }
+
+  /**
+   * Two-columns of text
+   */
+  .col-md-6 .text-block__content {
+    max-width: 400px;
   }
 }

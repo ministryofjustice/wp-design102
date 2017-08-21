@@ -34,6 +34,30 @@ use Roots\Sage\Extras;
     </div>
   </div>
   <div class="row">
+    <div class="col">
+      <div class="text-block">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-block__content">
+              <p>Inform the public about the new 5p charge for single-use carrier bags.</p>
+              <p>We designed a simple bag logo to act as a visual reminder. The designs developed from it were easy for
+                retailers to use in store and cost-effective to produce, meaning that they could reach a wide audience
+                across a variety of platforms.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-block__content">
+              <p>Inform the public about the new 5p charge for single-use carrier bags.</p>
+              <p>We designed a simple bag logo to act as a visual reminder. The designs developed from it were easy for
+                retailers to use in store and cost-effective to produce, meaning that they could reach a wide audience
+                across a variety of platforms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-sm-6">
       <div class="image-block">
         <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" width="1173" height="480">
