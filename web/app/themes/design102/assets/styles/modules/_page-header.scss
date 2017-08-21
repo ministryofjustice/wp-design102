@@ -1,11 +1,25 @@
 .page-header {
-  @extend .jumbotron;
   text-align: center;
-  position: relative;
-  color: #fff;
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .page-header__subheader {
+    font-size: 1.5625rem;
+  }
+}
+
+/**
+ * Jumbo page headers are larger and have a background image
+ */
+.page-header--jumbo {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin: 0;
+  background-color: $jumbotron-bg;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
 
   @include media-breakpoint-up(md) {
     padding-top: 6rem;
@@ -15,13 +29,6 @@
   @include media-breakpoint-up(lg) {
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  background-position: center center;
-  background-size: cover;
-
-  .page-header__subheader {
-    font-size: 1.5625rem;
   }
 
   // Make text elements appear over the &:after overlay

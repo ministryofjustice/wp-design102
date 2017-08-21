@@ -7,7 +7,11 @@ use Roots\Sage\Extras;
  */
 ?>
 
-<header class="page-header"
+<header class="page-header">
+  <h1>For public good, design great.</h1>
+</header>
+
+<header class="page-header page-header--jumbo"
         style="background-image: url('<?= Extras\asset_url('images/static/case-study-header.jpg') ?>');">
   <h1>Small change for a better world</h1>
   <div class="lead">Department for Envrionment &amp; Rural Affairs</div>
