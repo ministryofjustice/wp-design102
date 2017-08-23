@@ -5,7 +5,7 @@ use Roots\Sage\Extras;
 ?>
 
 <footer class="site-footer">
-  <div class="container">
+  <div class="l-page-container">
     <?php //dynamic_sidebar('sidebar-footer'); ?>
 
     <div class="row">

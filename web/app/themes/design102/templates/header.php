@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-light">
-    <div class="container">
+    <div class="l-page-container">
         <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php //bloginfo('name'); ?><strong>design</strong>102</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
