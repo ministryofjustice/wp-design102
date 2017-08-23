@@ -17,7 +17,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="container" role="document">
+    <div class="l-page-container" role="document">
         <?php
 
         include Wrapper\template_path();
