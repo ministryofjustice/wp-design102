@@ -74,3 +74,20 @@ function unbrand_youtube_iframe($iframe) {
 
   return str_replace($src, $new_src, $iframe);
 }
+
+function render_block($block_type, $fields = []) {
+  $template_name = str_replace('_', '-', $block_type);
+  $template_path = locate_template("templates/blocks/$template_name.php");
+  if (empty($template_path)) {
+    throw new \Exception("Missing template for '$block_type' block");
+  }
+  include $template_path;
+}
+
+function style_attr($styles) {
+  $out = '';
+  foreach ($styles as $key => $value) {
+    $out .= "$key: $value; ";
+  }
+  return esc_attr(rtrim($out));
+}

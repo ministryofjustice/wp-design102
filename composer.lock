@@ -4,8 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "20870c1b4be3601d00ca43eafc202ffe",
+    "content-hash": "ebc8e4d6372958c0bea006f91618441c",
     "packages": [
+        {
+            "name": "acf/advanced-custom-fields-pro",
+            "version": "5.6.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.6.1.zip",
+                "reference": null,
+                "shasum": "99d59f3485eeac05ce2aa049750d0086c2247ed1"
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",

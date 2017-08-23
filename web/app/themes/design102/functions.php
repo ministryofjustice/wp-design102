@@ -10,6 +10,7 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 $sage_includes = [
+  'lib/custom-post-types/case-study.php', // CPT: Case Study
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
   'lib/setup.php',     // Theme setup
@@ -17,7 +18,7 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/WP_Bootstrap_Navwalker.php',   // WP_Bootstrap_Navwalker
-  'lib/customizer.php' // Theme customizer
+  'lib/customizer.php', // Theme customizer
 ];
 
 foreach ($sage_includes as $file) {

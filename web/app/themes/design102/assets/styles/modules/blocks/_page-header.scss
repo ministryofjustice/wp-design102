@@ -1,18 +1,18 @@
-.page-header {
+.page-header-block {
   text-align: center;
   margin: 0;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
-  .page-header__subheader {
-    font-size: 1.5625rem;
+  .page-header-block__subheading {
+    @extend .lead;
   }
 }
 
 /**
  * Jumbo page headers are larger and have a background image
  */
-.page-header--jumbo {
+.page-header-block--jumbo {
   padding-top: 4rem;
   padding-bottom: 4rem;
   background-color: $jumbotron-bg;
