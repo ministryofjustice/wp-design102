@@ -7,17 +7,25 @@ use Roots\Sage\Extras;
  */
 ?>
 
-<header class="page-header">
-  <h1>For public good, design great.</h1>
-</header>
-
-<header class="page-header page-header--jumbo"
-        style="background-image: url('<?= Extras\asset_url('images/static/case-study-header.jpg') ?>');">
-  <h1>Small change for a better world</h1>
-  <div class="lead">Department for Envrionment &amp; Rural Affairs</div>
-</header>
 
 <div class="l-blocks">
+  <div class="row">
+    <div class="col">
+      <header class="page-header-block">
+        <h1>For public good, design great.</h1>
+      </header>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <header class="page-header-block page-header-block--jumbo"
+              style="background-image: url('<?= Extras\asset_url('images/static/case-study-header.jpg') ?>');">
+        <h1>Small change for a better world</h1>
+        <div class="page-header-block__subheading">Department for Envrionment &amp; Rural Affairs</div>
+      </header>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col">
       <div class="video-block">
@@ -72,14 +80,16 @@ use Roots\Sage\Extras;
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col">
       <div class="image-block">
-        <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" width="1173" height="480">
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="image-block">
-        <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" width="1173" height="480">
+        <div class="row">
+          <div class="col-sm-6">
+              <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" width="1173" height="480">
+          </div>
+          <div class="col-sm-6">
+            <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" width="1173" height="480">
+          </div>
+        </div>
       </div>
     </div>
   </div>
