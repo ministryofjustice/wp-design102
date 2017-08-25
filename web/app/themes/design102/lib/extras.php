@@ -75,15 +75,48 @@ function unbrand_youtube_iframe($iframe) {
   return str_replace($src, $new_src, $iframe);
 }
 
-function render_block($block_type, $fields = []) {
+/**
+ * Locate a block template file
+ *
+ * @param string $block_type The block type to render
+ * @return string Path to the block template file
+ * @throws \Exception
+ */
+function locate_block_template($block_type) {
   $template_name = str_replace('_', '-', $block_type);
   $template_path = locate_template("templates/blocks/$template_name.php");
   if (empty($template_path)) {
     throw new \Exception("Missing template for '$block_type' block");
   }
-  include $template_path;
+  return $template_path;
 }
 
+/**
+ * Render a block
+ *
+ * @param string $block_type The block type to render
+ * @param array $fields Key => value array of fields for the block
+ * @return void
+ */
+function render_block($block_type, $fields = []) {
+  try {
+    $template_path = locate_block_template($block_type);
+    echo '<div class="row"><div class="col">';
+    include $template_path;
+    echo '</div></div>';
+  }
+  catch (\Exception $e) {
+    echo '<div class="alert alert-danger" role="alert">' . $e->getMessage() . '</div>';
+  }
+}
+
+/**
+ * Generate a string of CSS styles suitable for use
+ * in an element's style attribute.
+ *
+ * @param array $styles Key => value array of style rules
+ * @return string
+ */
 function style_attr($styles) {
   $out = '';
   foreach ($styles as $key => $value) {

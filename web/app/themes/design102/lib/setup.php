@@ -119,3 +119,5 @@ function admin_bar_bump() {
   $bump = ob_get_clean();
   echo str_replace('html {', 'html, .navbar.fixed-top {', $bump);
 }
+
+acf_add_options_page();

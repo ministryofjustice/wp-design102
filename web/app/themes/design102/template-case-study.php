@@ -135,7 +135,7 @@ use Roots\Sage\Extras;
   </div>
   <div class="row">
     <div class="col">
-      <div class="other-projects-block">
+      <div class="carousel-block">
         <h2>Other projects</h2>
         <div class="carousel">
           <ul class="carousel__slides">
