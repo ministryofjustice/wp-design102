@@ -1,4 +1,21 @@
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
-<?php endwhile; ?>
+<?php
+
+use Roots\Sage\Extras;
+
+the_post();
+
+?>
+<div class="l-blocks">
+  <?php
+
+  while (have_rows('content_blocks')) {
+    the_row();
+
+    $block_type = get_row_layout();
+    $fields = get_row(true);
+
+    Extras\render_block($block_type, $fields);
+  }
+
+  ?>
+</div>
