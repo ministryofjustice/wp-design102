@@ -1,4 +1,15 @@
-<?php use Roots\Sage\Extras; ?>
+<?php
+
+use Roots\Sage\Extras;
+
+$case_studies = new WP_Query([
+  'post_type' => 'case-study',
+  'posts_per_page' => -1,
+  'post__not_in' => [get_the_ID()],
+]);
+
+if ($case_studies->have_posts()):
+?>
 <div class="carousel-block">
   <?php
 
@@ -9,72 +20,20 @@
   ?>
   <div class="carousel">
     <ul class="carousel__slides">
-      <li>
-        <a href="#" class="carousel__thumb">
-          <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
-          <div class="overlay">
-            Department for Business, Energy and Industrial Strategy
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="carousel__thumb">
-          <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
-          <div class="overlay">
-            Department for Business, Energy and Industrial Strategy
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="carousel__thumb">
-          <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
-          <div class="overlay">
-            Department for Business, Energy and Industrial Strategy
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="carousel__thumb">
-          <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
-          <div class="overlay">
-            Department for Business, Energy and Industrial Strategy
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="carousel__thumb">
-          <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>"/>
-          <div class="overlay">
-            Department for Business, Energy and Industrial Strategy
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="carousel__thumb">
-          <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" />
-          <div class="overlay">
-            Department for Business, Energy and Industrial Strategy
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="carousel__thumb">
-          <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" />
-          <div class="overlay">
-            Department for Business, Energy and Industrial Strategy
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="carousel__thumb">
-          <img src="<?= Extras\asset_url('images/static/case-study-image-2.jpg') ?>" />
-          <div class="overlay">
-            Department for Business, Energy and Industrial Strategy
-          </div>
-        </a>
-      </li>
+      <?php while ($case_studies->have_posts()): $case_studies->the_post(); ?>
+        <li>
+          <a href="<?php the_permalink(); ?>" class="carousel__thumb">
+            <?php the_post_thumbnail(); ?>
+            <div class="overlay">
+              <?php the_title(); ?>
+            </div>
+          </a>
+        </li>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
     </ul>
     <a href="#" class="carousel__prev"><svg><use xlink:href="<?= Extras\asset_url('images/carousel-arrows.svg#left') ?>" /></svg></a>
     <a href="#" class="carousel__next"><svg><use xlink:href="<?= Extras\asset_url('images/carousel-arrows.svg#right') ?>" /></svg></a>
   </div>
 </div>
+<?php endif; ?>
