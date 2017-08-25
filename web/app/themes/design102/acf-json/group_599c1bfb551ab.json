@@ -198,10 +198,10 @@
                         },
                         {
                             "key": "field_599c3db9afb27",
-                            "label": "Name",
-                            "name": "name",
+                            "label": "Person",
+                            "name": "person",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Name and job title of the person being quoted",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -210,7 +210,7 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
+                            "placeholder": "Name, Job Title",
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
@@ -220,7 +220,7 @@
                             "label": "Organisation",
                             "name": "organisation",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Organisation the person is from",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -342,8 +342,8 @@
                 },
                 "599c3cb9afb1f": {
                     "key": "599c3cb9afb1f",
-                    "name": "projects_carousel",
-                    "label": "Projects Carousel",
+                    "name": "case_studies_carousel",
+                    "label": "Case Studies Carousel",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -427,5 +427,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503502636
+    "modified": 1503670742
 }

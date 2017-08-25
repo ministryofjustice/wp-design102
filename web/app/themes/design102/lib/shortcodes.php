@@ -4,7 +4,8 @@ namespace Roots\Sage\Shortcodes;
 
 function testimonial($atts, $content = null) {
   $a = shortcode_atts([
-    'name' => false,
+    'person' => false,
+    'org' => false,
   ], $atts);
 
   $out = $content;
@@ -12,8 +13,13 @@ function testimonial($atts, $content = null) {
   $out = preg_replace('/^<\/p>/', '', $out);
   $out = preg_replace('/<p>$/', '', $out);
 
-  if (!empty($a['name'])) {
-    $out .= '<cite>' . $a['name'] . '</cite>';
+  $person = !empty($a['person']) ? wptexturize($a['person']) : false;
+  $org = !empty($a['org']) ? wptexturize($a['org']) : false;
+  if ($person || $org) {
+    $out .= '<footer>';
+    if ($person) $out .= '<div class="person">' . $person . '</div>';
+    if ($org) $out .= '<div class="org">' . $org . '</div>';
+    $out .= '</footer>';
   }
 
   return '<blockquote class="testimonial">' . $out . '</blockquote>';
