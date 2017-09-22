@@ -1,6 +1,13 @@
+<?php
+
+use Roots\Sage\Extras;
+
+?>
 <nav class="navbar navbar-expand-md fixed-top navbar-light">
     <div class="l-page-container">
-        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php //bloginfo('name'); ?><strong>design</strong>102</a>
+        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
+          <img src="<?= Extras\asset_url('images/d102-logo.svg') ?>" alt="Design102" />
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

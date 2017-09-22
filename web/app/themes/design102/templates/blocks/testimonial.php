@@ -1,8 +1,10 @@
 <div class="testimonial-block">
   <blockquote class="testimonial">
-    <?php
+    <div class="testimonial__quote">
+      <?= $fields['quote'] ?>
+    </div>
 
-    echo $fields['quote'];
+    <?php
 
     $person = !empty($fields['person']) ? wptexturize($fields['person']) : false;
     $org = !empty($fields['organisation']) ? wptexturize($fields['organisation']) : false;
@@ -15,4 +17,8 @@
 
     ?>
   </blockquote>
+
+  <?php if (!empty($fields['link_to_page']) && !empty($fields['link_text'])): ?>
+  <a href="<?= $fields['link_to_page'] ?>" class="btn"><?= wptexturize($fields['link_text']) ?></a>
+  <?php endif; ?>
 </div>

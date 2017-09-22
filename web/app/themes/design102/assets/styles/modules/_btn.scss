@@ -7,7 +7,3 @@
   border-width: 3px;
   font-weight: bold;
 }
-
-.btn-lg {
-  @include button-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $lead-font-size, $line-height-lg, $btn-border-radius-lg);
-}

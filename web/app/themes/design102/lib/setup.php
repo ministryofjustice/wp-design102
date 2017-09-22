@@ -53,6 +53,20 @@ function setup() {
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
+function add_image_sizes() {
+  $sizes = [
+    '4x3_large' =>  [960, 720, true],
+    '4x3_medium' => [720, 540, true],
+    '4x3_small' =>  [540, 405, true],
+  ];
+
+  foreach ($sizes as $name => $params) {
+    add_image_size($name, $params[0], $params[1], $params[2]);
+    add_image_size("{$name}_x2", ($params[0] * 2), ($params[1] * 2), $params[2]);
+  }
+}
+add_action('after_setup_theme', __NAMESPACE__ . '\\add_image_sizes');
+
 /**
  * Register sidebars
  */
