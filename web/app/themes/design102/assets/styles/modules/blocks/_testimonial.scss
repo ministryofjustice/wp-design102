@@ -1,9 +1,15 @@
 .testimonial-block {
   padding: 2rem 1rem;
+  background-color: $gray-200;
+  text-align: center;
 
   > .testimonial {
-    max-width: 570px;
+    max-width: 800px;
     margin: 0 auto;
+  }
+
+  .btn {
+    margin-top: 1rem;
   }
 
   @include media-breakpoint-up(sm) {

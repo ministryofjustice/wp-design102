@@ -7,10 +7,15 @@ $sidebar-sm-columns:    4;
 
 // Fonts
 $font-family-sans-serif: "fsme", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$h1-font-size: 3rem; // 48px
+
+$font-size-base: 1.25rem; // 20px, assuming a browser default of 16px
+$font-size-lg:   1.5rem; // 24px
+$font-size-sm:   1rem; // 16px
+$lead-font-size: 1.75rem; // 28px
+$lead-font-weight: 400;
+
+$h1-font-size: 2.375rem; // 38px
 $headings-font-weight: bold;
-$font-size-lg:   1.1875rem; // 19px
-$lead-font-size: 1.5rem; // 24px
 
 //
 // Color system
