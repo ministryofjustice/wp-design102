@@ -8,6 +8,8 @@ the_post();
 <div class="l-blocks">
   <?php
 
+  Extras\render_block('case_study_header', ['heading' => get_the_title(), 'intro_text' => 'Some intro']);
+
   while (have_rows('content_blocks')) {
     the_row();
 
@@ -18,7 +20,6 @@ the_post();
   }
 
   Extras\render_block('get_in_touch');
-  Extras\render_block('case_studies_carousel', ['heading' => 'Other projects']);
 
   ?>
 </div>
