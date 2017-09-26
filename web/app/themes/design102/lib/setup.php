@@ -136,3 +136,56 @@ function admin_bar_bump() {
 }
 
 acf_add_options_page();
+
+/**
+ * Filter which content blocks are available for use on the post edit screen.
+ *
+ * Some content blocks are only to be used on specific post types.
+ * For example: 'page_header' blocks can only be used on pages,
+ *     and 'case_study_header' blocks can only be used on case studies.
+ *
+ * To configure which blocks are excluded from each post type, edit the
+ * $exclude_layouts variable.
+ *
+ * @param $field
+ * @return mixed
+ */
+function filter_content_block_layouts($field) {
+  $exclude_layouts = [
+    // 'post_type' => [ 'block_name' ]
+    'page' => [
+    ],
+    'case-study' => [
+      'page_header',
+      'get_in_touch',
+    ],
+  ];
+
+  $post_type = get_post_type();
+  if (is_admin() && in_array($post_type, array_keys($exclude_layouts))) {
+    $exclude = $exclude_layouts[$post_type];
+    $field['layouts'] = array_filter($field['layouts'], function($layout) use ($exclude) {
+      return !in_array($layout['name'], $exclude);
+    });
+  }
+
+  return $field;
+}
+add_filter('acf/load_field/name=content_blocks', __NAMESPACE__ . '\\filter_content_block_layouts');
+
+/**
+ * Sort content block layouts alphabetically by name
+ *
+ * @param $field
+ * @return mixed
+ */
+function sort_content_block_layouts($field) {
+  if (is_admin()) {
+    uasort($field['layouts'], function($a, $b) {
+      return strcmp($a['name'], $b['name']);
+    });
+  }
+
+  return $field;
+}
+add_filter('acf/load_field/name=content_blocks', __NAMESPACE__ . '\\sort_content_block_layouts');

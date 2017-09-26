@@ -6,12 +6,18 @@ $categories = get_terms([
   'value_field' => 'slug',
 ]);
 
+global $listing_url;
+$listing_url = get_permalink(get_page_by_path('/work/'));
+
 $filter_url = function($category = false) {
+  global $listing_url;
+
   $args = [];
   if ($category) {
     $args['category'] = $category;
   }
-  return add_query_arg($args, get_the_permalink());
+
+  return add_query_arg($args, $listing_url);
 };
 
 $project_category = get_query_var('category');
@@ -33,7 +39,7 @@ else {
   </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="<?php the_permalink(); ?>">All projects</a>
+    <a class="dropdown-item" href="<?= $filter_url() ?>">All projects</a>
     <div class="dropdown-divider"></div>
     <h6 class="dropdown-header">Filter by</h6>
     <?php foreach ($categories as $category): ?>
