@@ -1,9 +1,7 @@
 /**
- * Extensions to bootstrap's button component.
+ * Extensions to bootstrap's button component
  */
 
 .btn-outline-white {
   @include button-outline-variant($white, $gray-800);
-  border-width: 3px;
-  font-weight: bold;
 }

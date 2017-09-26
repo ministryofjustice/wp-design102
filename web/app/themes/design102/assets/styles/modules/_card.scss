@@ -1,0 +1,23 @@
+/**
+ * Extensions to bootstrap's card component
+ */
+
+.card-img-overlay-gradient {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: $card-img-overlay-padding;
+
+  @include gradient-y(rgba(#000, 0), rgba(#000, 1));
+  @include transition($btn-transition);
+
+  .card:focus &,
+  .card:hover & {
+    padding-top: $card-img-overlay-padding * 2;
+  }
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+  height: auto;
+}

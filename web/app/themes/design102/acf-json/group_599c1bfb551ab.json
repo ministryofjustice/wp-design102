@@ -665,6 +665,15 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "59c527ab1cfb7": {
+                    "key": "59c527ab1cfb7",
+                    "name": "case_studies_list",
+                    "label": "Case Studies list",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -698,5 +707,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1506086946
+    "modified": 1506095519
 }
