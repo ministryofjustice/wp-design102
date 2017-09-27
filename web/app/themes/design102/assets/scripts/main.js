@@ -80,13 +80,17 @@
   var $ = jQuery;
 
   $('.hero-carousel-block').each(function(i, carousel) {
-    $(carousel).find('.carousel__slides').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      nextArrow: false,
-      prevArrow: false,
-      dots: true
-    });
+    var slidesContainer = $(carousel).find('.carousel__slides');
+
+    if (slidesContainer.find('> li').length > 1) {
+      slidesContainer.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: false,
+        prevArrow: false,
+        dots: true
+      });
+    }
   });
 
 })();
