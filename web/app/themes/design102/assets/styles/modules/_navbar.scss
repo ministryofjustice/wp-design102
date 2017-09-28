@@ -3,6 +3,19 @@
  */
 .navbar-light {
   background-color: rgba($white, 0.95);
+  @include transition($btn-transition);
+
+  $shadow-on:  0 3px 10px rgba($black, 0.25);
+  $shadow-off: 0 0 0 rgba($black, 0);
+
+  box-shadow: $shadow-on;
+  @include media-breakpoint-up(md) {
+    box-shadow: $shadow-off;
+
+    &.float {
+      box-shadow: $shadow-on;
+    }
+  }
 
   .navbar-nav {
     .nav-link {
@@ -20,10 +33,10 @@
       &:after {
         content: '';
         position: absolute;
-        bottom: 0.5rem;
-        left: 1rem;
-        right: 1rem;
-        border-bottom: 3px solid $navbar-light-active-color;
+        bottom: 0.3rem;
+        left: 0.7rem;
+        right: 0.7rem;
+        border-bottom: 3px solid theme-color("primary");
       }
     }
   }
