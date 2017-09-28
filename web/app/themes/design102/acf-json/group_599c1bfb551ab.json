@@ -16,14 +16,14 @@
                 "id": ""
             },
             "layouts": {
-                "599c1c2ccd0d6": {
-                    "key": "599c1c2ccd0d6",
-                    "name": "page_header",
-                    "label": "Page Header",
+                "59cd147b38d26": {
+                    "key": "59cd147b38d26",
+                    "name": "at_a_glance",
+                    "label": "At A Glance",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_599c2c12b9b7b",
+                            "key": "field_59cd19f700108",
                             "label": "Heading",
                             "name": "heading",
                             "type": "text",
@@ -42,11 +42,11 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_59c3cd50a5e48",
-                            "label": "Intro text",
-                            "name": "intro_text",
-                            "type": "wysiwyg",
-                            "instructions": "An introductory paragraph. Optional.",
+                            "key": "field_59cd149038d28",
+                            "label": "Summary Fields",
+                            "name": "summary_fields",
+                            "type": "repeater",
+                            "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -54,297 +54,62 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59cd14b138d29",
+                                    "label": "Key",
+                                    "name": "key",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_59cd14b738d2a",
+                                    "label": "Value",
+                                    "name": "value",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
                         }
                     ],
                     "min": "",
                     "max": ""
                 },
-                "599c2d33b9b7e": {
-                    "key": "599c2d33b9b7e",
-                    "name": "text",
-                    "label": "Text",
+                "59c527ab1cfb7": {
+                    "key": "59c527ab1cfb7",
+                    "name": "case_studies_list",
+                    "label": "Case Studies list",
                     "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599c2e14b9b80",
-                            "label": "Columns",
-                            "name": "columns",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "1": "Single column",
-                                "2": "Two columns"
-                            },
-                            "default_value": [
-                                1
-                            ],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_599c2d6ab9b7f",
-                            "label": "Column 1",
-                            "name": "column_1",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_599c2ef4b9b81",
-                            "label": "Column 2",
-                            "name": "column_2",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_599c2e14b9b80",
-                                        "operator": "==",
-                                        "value": "2"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "599c3d64afb23": {
-                    "key": "599c3d64afb23",
-                    "name": "testimonial",
-                    "label": "Testimonial",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599c3d64afb25",
-                            "label": "Quote",
-                            "name": "quote",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_599c3db9afb27",
-                            "label": "Person",
-                            "name": "person",
-                            "type": "text",
-                            "instructions": "Name and job title of the person being quoted",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "Name, Job Title",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599c3dd0afb28",
-                            "label": "Organisation",
-                            "name": "organisation",
-                            "type": "text",
-                            "instructions": "Organisation the person is from",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_59c50997be491",
-                            "label": "Link Text",
-                            "name": "link_text",
-                            "type": "text",
-                            "instructions": "Show a link below the quote. Optional.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_59c509b1be492",
-                            "label": "Link to Page",
-                            "name": "link_to_page",
-                            "type": "page_link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "post_type": [
-                                "page",
-                                "case-study"
-                            ],
-                            "taxonomy": [],
-                            "allow_null": 1,
-                            "allow_archives": 0,
-                            "multiple": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "599c3b4cafb19": {
-                    "key": "599c3b4cafb19",
-                    "name": "image",
-                    "label": "Image",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599c3b4cafb1a",
-                            "label": "Columns",
-                            "name": "columns",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "1": "Single column",
-                                "2": "Two columns"
-                            },
-                            "default_value": [
-                                1
-                            ],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_599c3b4cafb1b",
-                            "label": "Image 1",
-                            "name": "image_1",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        },
-                        {
-                            "key": "field_599c3b4cafb1c",
-                            "label": "Image 2",
-                            "name": "image_2",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_599c3b4cafb1a",
-                                        "operator": "==",
-                                        "value": "2"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ],
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
@@ -411,6 +176,28 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": ""
+                                },
+                                {
+                                    "key": "field_59cd1c0ed78d0",
+                                    "label": "Link to page",
+                                    "name": "link_to_page",
+                                    "type": "page_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "page",
+                                        "case-study"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 1,
+                                    "allow_archives": 0,
+                                    "multiple": 0
                                 },
                                 {
                                     "key": "field_59c50b514a1e1",
@@ -490,6 +277,28 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": ""
+                                },
+                                {
+                                    "key": "field_59cd1c4fd78d1",
+                                    "label": "Link to page",
+                                    "name": "link_to_page",
+                                    "type": "page_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "page",
+                                        "case-study"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 1,
+                                    "allow_archives": 0,
+                                    "multiple": 0
                                 },
                                 {
                                     "key": "field_59c50b7a4a1e5",
@@ -640,6 +449,338 @@
                     "min": "",
                     "max": ""
                 },
+                "599c3b4cafb19": {
+                    "key": "599c3b4cafb19",
+                    "name": "image",
+                    "label": "Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_599c3b4cafb1a",
+                            "label": "Columns",
+                            "name": "columns",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "1": "Single column",
+                                "2": "Two columns"
+                            },
+                            "default_value": [
+                                1
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_599c3b4cafb1b",
+                            "label": "Image 1",
+                            "name": "image_1",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_599c3b4cafb1c",
+                            "label": "Image 2",
+                            "name": "image_2",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_599c3b4cafb1a",
+                                        "operator": "==",
+                                        "value": "2"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "599c1c2ccd0d6": {
+                    "key": "599c1c2ccd0d6",
+                    "name": "page_header",
+                    "label": "Page Header",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_599c2c12b9b7b",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59c3cd50a5e48",
+                            "label": "Intro text",
+                            "name": "intro_text",
+                            "type": "wysiwyg",
+                            "instructions": "An introductory paragraph. Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "599c3d64afb23": {
+                    "key": "599c3d64afb23",
+                    "name": "testimonial",
+                    "label": "Testimonial",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_599c3d64afb25",
+                            "label": "Quote",
+                            "name": "quote",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_599c3db9afb27",
+                            "label": "Person",
+                            "name": "person",
+                            "type": "text",
+                            "instructions": "Name and job title of the person being quoted",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Name, Job Title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_599c3dd0afb28",
+                            "label": "Organisation",
+                            "name": "organisation",
+                            "type": "text",
+                            "instructions": "Organisation the person is from",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59c50997be491",
+                            "label": "Link Text",
+                            "name": "link_text",
+                            "type": "text",
+                            "instructions": "Show a link below the quote. Optional.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59c509b1be492",
+                            "label": "Link to Page",
+                            "name": "link_to_page",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page",
+                                "case-study"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 1,
+                            "allow_archives": 0,
+                            "multiple": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "599c2d33b9b7e": {
+                    "key": "599c2d33b9b7e",
+                    "name": "text",
+                    "label": "Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_599c2e14b9b80",
+                            "label": "Columns",
+                            "name": "columns",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "1": "Single column",
+                                "2": "Two columns"
+                            },
+                            "default_value": [
+                                1
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_599c2d6ab9b7f",
+                            "label": "Column 1",
+                            "name": "column_1",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_599c2ef4b9b81",
+                            "label": "Column 2",
+                            "name": "column_2",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_599c2e14b9b80",
+                                        "operator": "==",
+                                        "value": "2"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "599c3d25afb21": {
                     "key": "599c3d25afb21",
                     "name": "video",
@@ -663,15 +804,6 @@
                             "height": ""
                         }
                     ],
-                    "min": "",
-                    "max": ""
-                },
-                "59c527ab1cfb7": {
-                    "key": "59c527ab1cfb7",
-                    "name": "case_studies_list",
-                    "label": "Case Studies list",
-                    "display": "block",
-                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 }
@@ -707,5 +839,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1506095519
+    "modified": 1506615066
 }

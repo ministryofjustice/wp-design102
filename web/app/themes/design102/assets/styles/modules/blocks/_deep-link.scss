@@ -1,26 +1,5 @@
 .deep-link-block {
-  margin-bottom: 1.5rem;
-
-  header {
-    position: relative;
-    overflow: hidden;
+  .card {
     margin-bottom: 1.5rem;
-
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    h2 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 5rem 2rem 2rem 2rem;
-      margin: 0;
-      @include gradient-y(rgba(#000, 0), rgba(#000, 1));
-      color: $white;
-    }
   }
 }
