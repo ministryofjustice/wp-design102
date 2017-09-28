@@ -8,6 +8,14 @@
   "private": true,
   "dependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
-    "slick-carousel": "^1.7.1"
+    "slick-carousel": "^1.7.1",
+    "jquery-throttle-debounce": "*"
+  },
+  "overrides": {
+    "jquery-throttle-debounce": {
+      "main": [
+        "./jquery.ba-throttle-debounce.js"
+      ]
+    }
   }
 }

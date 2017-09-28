@@ -76,9 +76,7 @@
 
 })(jQuery); // Fully reference jQuery after this point.
 
-(function() {
-  var $ = jQuery;
-
+(function($) {
   $('.hero-carousel-block').each(function(i, carousel) {
     var slidesContainer = $(carousel).find('.carousel__slides');
 
@@ -88,9 +86,23 @@
         slidesToScroll: 1,
         nextArrow: false,
         prevArrow: false,
-        dots: true
+        dots: true,
+        adaptiveHeight: true
       });
     }
   });
 
-})();
+  $(function(){
+    // Navbar will float this many pixels down the page
+    var floatAfter = 30;
+    var navbar = $('.navbar-light');
+
+    var floatHeader = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      navbar.toggleClass('float', scrollTop >= floatAfter);
+    };
+
+    $(window).scroll($.throttle(250, floatHeader));
+  });
+
+})(jQuery);

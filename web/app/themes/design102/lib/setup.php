@@ -55,9 +55,15 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
 function add_image_sizes() {
   $sizes = [
-    '4x3_large' =>  [960, 720, true],
+    '4x3_large'  => [960, 720, true],
     '4x3_medium' => [720, 540, true],
-    '4x3_small' =>  [540, 405, true],
+    '4x3_small'  => [540, 405, true],
+    '3x2_large'  => [960, 640, true],
+    '3x2_medium' => [720, 480, true],
+    '3x2_small'  => [540, 360, true],
+    '2x1_large'  => [960, 480, true],
+    '2x1_medium' => [720, 360, true],
+    '2x1_small'  => [540, 270, true],
   ];
 
   foreach ($sizes as $name => $params) {
