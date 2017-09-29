@@ -1,4 +1,19 @@
-<div class="testimonial-block">
+<?php
+
+use Roots\Sage\Extras;
+
+$style = [];
+$class = ['testimonial-block'];
+if (!empty($fields['background_colour'])) {
+  $style['background-color'] = $fields['background_colour'];
+  if (Extras\contrastingTextColour($fields['background_colour']) == 'white') {
+    $class[] = 'text-white';
+  }
+}
+
+?>
+
+<div class="<?= Extras\class_attr($class) ?>"<?php if (!empty($style)) echo ' style="' . Extras\style_attr($style) . '"'; ?>>
   <blockquote class="testimonial">
     <div class="testimonial__quote">
       <?= $fields['quote'] ?>
@@ -18,7 +33,13 @@
     ?>
   </blockquote>
 
-  <?php if (!empty($fields['link_to_page']) && !empty($fields['link_text'])): ?>
-  <a href="<?= $fields['link_to_page'] ?>" class="btn"><?= wptexturize($fields['link_text']) ?></a>
-  <?php endif; ?>
+  <?php
+
+  if (!empty($fields['strapline'])) {
+    echo '<div class="testimonial-block__strapline">';
+    echo $fields['strapline'];
+    echo '</div>';
+  }
+
+  ?>
 </div>

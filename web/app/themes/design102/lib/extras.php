@@ -124,3 +124,30 @@ function style_attr($styles) {
   }
   return esc_attr(rtrim($out));
 }
+
+/**
+ * Generate a string of classes suitable for use
+ * in an element's class attribute.
+ *
+ * @param array $classes Array of class names
+ * @return string
+ */
+function class_attr($classes) {
+  return implode(' ', $classes);
+}
+
+/**
+ * Calculate which text colour to use (black or white)
+ * based on the supplied background colour.
+ *
+ * @param string $hexcolor
+ * @return string 'black' or 'white'
+ */
+function contrastingTextColour($hexcolor) {
+  $hexcolor = preg_replace('/[#\s]/', '', $hexcolor);
+  $r = hexdec(substr($hexcolor, 0, 2));
+  $g = hexdec(substr($hexcolor, 2, 2));
+  $b = hexdec(substr($hexcolor, 4, 2));
+  $yiq = ( ($r*299) + ($g*587) + ($b*114) ) / 1000;
+  return ( $yiq >= 128 ) ? 'black' : 'white';
+}

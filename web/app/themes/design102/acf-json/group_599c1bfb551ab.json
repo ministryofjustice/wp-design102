@@ -654,11 +654,11 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_59c50997be491",
-                            "label": "Link Text",
-                            "name": "link_text",
-                            "type": "text",
-                            "instructions": "Show a link below the quote. Optional.",
+                            "key": "field_59cd279518871",
+                            "label": "Strapline",
+                            "name": "strapline",
+                            "type": "wysiwyg",
+                            "instructions": "Text to show underneath the testimonial. Optional.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -667,17 +667,17 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
                         },
                         {
-                            "key": "field_59c509b1be492",
-                            "label": "Link to Page",
-                            "name": "link_to_page",
-                            "type": "page_link",
-                            "instructions": "",
+                            "key": "field_59ce08d06d0f0",
+                            "label": "Background colour",
+                            "name": "background_colour",
+                            "type": "color_picker",
+                            "instructions": "Optional",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -685,14 +685,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": [
-                                "page",
-                                "case-study"
-                            ],
-                            "taxonomy": [],
-                            "allow_null": 1,
-                            "allow_archives": 0,
-                            "multiple": 0
+                            "default_value": ""
                         }
                     ],
                     "min": "",
@@ -740,7 +733,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -767,7 +760,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -776,6 +769,33 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
+                        },
+                        {
+                            "key": "field_59ce432c2ee43",
+                            "label": "Background colour",
+                            "name": "background_colour",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "None",
+                                "grey": "Light Grey"
+                            },
+                            "default_value": [
+                                "none"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
@@ -839,5 +859,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1506615066
+    "modified": 1506690446
 }
