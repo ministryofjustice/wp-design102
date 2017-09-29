@@ -8,8 +8,9 @@
     margin: 0 auto;
   }
 
-  .btn {
-    margin-top: 1rem;
+  > .testimonial-block__strapline {
+    text-align: center;
+    margin-top: 1.5rem;
   }
 
   @include media-breakpoint-up(sm) {

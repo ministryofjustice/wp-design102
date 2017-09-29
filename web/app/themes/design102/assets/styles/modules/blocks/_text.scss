@@ -14,7 +14,19 @@
   /**
    * Two-columns of text
    */
-  .col-md-6 .text-block__content {
-    max-width: 400px;
+  @include media-breakpoint-up(md) {
+    .col-md-6 .text-block__content {
+      max-width: 400px;
+    }
+  }
+
+  // Light grey
+  &.text-block--light-grey {
+    background-color: $gray-200;
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
   }
 }

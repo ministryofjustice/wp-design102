@@ -1,4 +1,16 @@
-<div class="text-block">
+<?php
+
+use Roots\Sage\Extras;
+
+$class = ['text-block'];
+
+if ($fields['background_colour'] == 'grey') {
+  $class[] = 'text-block--light-grey';
+}
+
+?>
+
+<div class="<?= Extras\class_attr($class) ?>">
   <?php if ($fields['columns'] === '1'): ?>
     <?php // Single column layout ?>
     <div class="text-block__content">
