@@ -77,6 +77,7 @@
 })(jQuery); // Fully reference jQuery after this point.
 
 (function($) {
+  // Hero carousels
   $('.hero-carousel-block').each(function(i, carousel) {
     var slidesContainer = $(carousel).find('.carousel__slides');
 
@@ -92,6 +93,7 @@
     }
   });
 
+  // Navbar float
   $(function(){
     // Navbar will float this many pixels down the page
     var floatAfter = 30;
@@ -103,6 +105,64 @@
     };
 
     $(window).scroll($.throttle(250, floatHeader));
+  });
+
+  // Zoomable images
+  $(function(){
+    $('.zoomable').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      image: {
+        verticalFit: true
+      },
+      gallery: {
+        enabled: true
+      }
+    });
+  });
+
+  // Team members
+  $('.team-members-block').each(function(){
+    var teamMembers = $(this).find('.team-member');
+
+    teamMembers.each(function(i, el) {
+      var member = $(el);
+      var video = member.find('video')[0];
+
+      var mouseover = function() {
+        video.currentTime = 0;
+        $(video).addClass('show');
+        video.play();
+      };
+
+      var mouseout = function() {
+        $(video).removeClass('show');
+        video.currentTime = 0;
+      };
+
+      member.hover(mouseover, mouseout);
+    });
+
+    var preloadVisibleVideos = function() {
+      teamMembers.filter(':visible').find('video').attr('preload', 'auto');
+    };
+
+    $(this).find('> .row:not(:first)').wrapAll('<div class="team-members-block__show-more-wrapper"></div>');
+
+    var showMoreTrigger = $(this).find('.team-members-block__show-more');
+    var showMoreWrapper = $(this).find('.team-members-block__show-more-wrapper');
+
+    showMoreWrapper.hide();
+
+    showMoreTrigger.on('click', function(e) {
+      e.preventDefault();
+      showMoreTrigger.slideUp();
+      showMoreWrapper.slideDown({complete: function() {
+        preloadVisibleVideos();
+      }});
+    });
+
+    preloadVisibleVideos();
   });
 
 })(jQuery);

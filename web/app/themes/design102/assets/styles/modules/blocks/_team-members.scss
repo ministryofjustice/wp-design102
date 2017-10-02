@@ -1,0 +1,13 @@
+.team-members-block {
+  .team-members-block__show-more {
+    text-align: center;
+    .btn:after {
+      content: '⌄';
+      font-size: 2em;
+      margin-left: 0.1em;
+      line-height: 0;
+      position: relative;
+      bottom: -0.1em;
+    }
+  }
+}

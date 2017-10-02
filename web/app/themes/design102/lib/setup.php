@@ -195,3 +195,19 @@ function sort_content_block_layouts($field) {
   return $field;
 }
 add_filter('acf/load_field/name=content_blocks', __NAMESPACE__ . '\\sort_content_block_layouts');
+
+/**
+ * Filter which post types can be reordered
+ */
+function metronet_reorder_post_types($post_types) {
+  $post_types = [
+    'team-member' => 'team-member',
+  ];
+  return $post_types;
+}
+add_filter('metronet_reorder_post_types', __NAMESPACE__ . '\\metronet_reorder_post_types');
+
+function remove_reorder_submenu_page() {
+  remove_submenu_page('edit.php?post_type=team-member', 'reorder-team-member');
+}
+add_action('admin_menu', __NAMESPACE__ . '\\remove_reorder_submenu_page', 20);

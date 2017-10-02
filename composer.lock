@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebc8e4d6372958c0bea006f91618441c",
+    "content-hash": "08feb17c69e2f8a60e222e5817846e08",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -400,6 +400,46 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/metronet-reorder-posts",
+            "version": "2.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/metronet-reorder-posts/",
+                "reference": "tags/2.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/metronet-reorder-posts.2.4.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/metronet-reorder-posts/"
+        },
+        {
+            "name": "wpackagist-plugin/reorder-by-term",
+            "version": "1.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/reorder-by-term/",
+                "reference": "tags/1.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/reorder-by-term.1.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/reorder-by-term/"
         }
     ],
     "packages-dev": [
