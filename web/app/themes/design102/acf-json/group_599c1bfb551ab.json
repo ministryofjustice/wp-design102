@@ -1084,6 +1084,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "job-vacancy"
+            }
         ]
     ],
     "menu_order": 10,
@@ -1096,5 +1103,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1506971225
+    "modified": 1506977419
 }
