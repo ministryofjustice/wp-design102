@@ -11,6 +11,7 @@
  */
 $sage_includes = [
   'lib/custom-post-types/case-study.php', // CPT: Case Study
+  'lib/custom-post-types/team-member.php', // CPT: Team Member
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
   'lib/setup.php',     // Theme setup

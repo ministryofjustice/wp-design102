@@ -1,0 +1,40 @@
+.team-member {
+  display: block;
+  margin-bottom: ( $grid-gutter-width / 2 );
+
+  &, &:focus, &:hover {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  .team-member__photo {
+    position: relative;
+    display: block;
+
+    img, video {
+      width: 100%;
+      height: auto;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: none;
+
+      &.show {
+        display: block;
+      }
+    }
+  }
+
+  .team-member__name {
+    font-weight: bold;
+  }
+
+  .team-member__job-role {
+    font-size: $small-font-size;
+  }
+}
