@@ -129,15 +129,20 @@
       var member = $(el);
       var video = member.find('video')[0];
 
-      var mouseover = function() {
+      var resetVideo = function() {
+        video.pause();
         video.currentTime = 0;
+      };
+
+      var mouseover = function() {
+        resetVideo();
         $(video).addClass('show');
         video.play();
       };
 
       var mouseout = function() {
         $(video).removeClass('show');
-        video.currentTime = 0;
+        resetVideo();
       };
 
       member.hover(mouseover, mouseout);

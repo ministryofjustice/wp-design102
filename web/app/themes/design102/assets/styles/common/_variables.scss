@@ -8,13 +8,19 @@ $sidebar-sm-columns:    4;
 // Fonts
 $font-family-sans-serif: "fsme", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-$font-size-base: 1.25rem; // 20px, assuming a browser default of 16px
-$font-size-lg:   1.5rem; // 24px
-$font-size-sm:   1rem; // 16px
-$lead-font-size: 1.75rem; // 28px
-$lead-font-weight: 400;
+//$font-size-base: 1.25rem; // 20px, assuming a browser default of 16px
+//$font-size-lg:   1.5rem; // 24px
+//$font-size-sm:   1rem; // 16px
+//$lead-font-size: 1.75rem; // 28px
+//$h1-font-size: 2.375rem; // 38px
 
-$h1-font-size: 2.375rem; // 38px
+$font-size-base: 1.25rem * 0.8; // 20px, assuming a browser default of 16px
+$font-size-lg:   1.5rem * 0.8; // 24px
+$font-size-sm:   1rem * 0.8; // 16px
+$lead-font-size: 1.75rem * 0.8; // 28px
+//$h1-font-size: 2.375rem * 0.8; // 38px
+
+$lead-font-weight: 400;
 $headings-font-weight: bold;
 
 // Buttons

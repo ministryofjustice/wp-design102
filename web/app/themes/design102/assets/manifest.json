@@ -17,6 +17,11 @@
         "scripts/customizer.js"
       ]
     },
+    "wp-admin.js": {
+      "files": [
+        "scripts/wp-admin.js"
+      ]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }

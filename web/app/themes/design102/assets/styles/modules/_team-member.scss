@@ -10,6 +10,7 @@
   .team-member__photo {
     position: relative;
     display: block;
+    border: 1px solid $gray-600;
 
     img, video {
       width: 100%;
@@ -32,9 +33,9 @@
 
   .team-member__name {
     font-weight: bold;
+    margin-top: 0.5rem;
   }
 
   .team-member__job-role {
-    font-size: $small-font-size;
   }
 }

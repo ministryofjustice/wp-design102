@@ -128,6 +128,11 @@ function assets() {
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
+function admin_assets() {
+  wp_enqueue_script('sage/admin_js', Assets\asset_path('scripts/wp-admin.js'), ['jquery'], null, true);
+}
+add_action('admin_enqueue_scripts', __NAMESPACE__ . '\\admin_assets');
+
 /**
  * Admin Bar Bump
  * WordPress adds margin to the html element when the admin bar is showing.
@@ -207,7 +212,49 @@ function metronet_reorder_post_types($post_types) {
 }
 add_filter('metronet_reorder_post_types', __NAMESPACE__ . '\\metronet_reorder_post_types');
 
+/**
+ * Remove the 'Reorder' submenu item from Team Members post type menu.
+ */
 function remove_reorder_submenu_page() {
   remove_submenu_page('edit.php?post_type=team-member', 'reorder-team-member');
 }
 add_action('admin_menu', __NAMESPACE__ . '\\remove_reorder_submenu_page', 20);
+
+/**
+ * Give ACF the Google Maps API key
+ */
+function acf_google_maps_api_key($api) {
+  if (defined('GOOGLE_MAPS_API_KEY')) {
+    $api['key'] = GOOGLE_MAPS_API_KEY;
+  }
+  return $api;
+}
+add_filter('acf/fields/google_map/api', __NAMESPACE__ . '\\acf_google_maps_api_key');
+
+// Callback function to insert 'styleselect' into the $buttons array
+function my_mce_buttons_2( $buttons ) {
+  array_unshift( $buttons, 'styleselect' );
+  return $buttons;
+}
+// Register our callback to the appropriate filter
+add_filter( 'mce_buttons_2', __NAMESPACE__ . '\\my_mce_buttons_2' );
+
+// Callback function to filter the MCE settings
+function my_mce_before_init_insert_formats( $init_array ) {
+  // Define the style_formats array
+  $style_formats = [
+    // Each array child is a format with it's own settings
+    [
+      'title' => '2 column bullets',
+      'selector' => 'ul',
+      'classes' => 'two-cols',
+    ],
+  ];
+  // Insert the array, JSON ENCODED, into 'style_formats'
+  $init_array['style_formats'] = json_encode( $style_formats );
+
+  return $init_array;
+
+}
+// Attach callback to 'tiny_mce_before_init'
+add_filter( 'tiny_mce_before_init', __NAMESPACE__ . '\\my_mce_before_init_insert_formats' );

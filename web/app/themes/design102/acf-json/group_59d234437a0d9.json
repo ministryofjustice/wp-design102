@@ -26,7 +26,7 @@
             "label": "Photo",
             "name": "photo",
             "type": "image",
-            "instructions": "",
+            "instructions": "Must be 500×472px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -50,7 +50,7 @@
             "label": "Hover animation",
             "name": "hover_animation",
             "type": "file",
-            "instructions": "Optional. Must be an MP4 file.",
+            "instructions": "Optional. Must be an MP4 file, 500×472px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -101,5 +101,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1506950113
+    "modified": 1507131503
 }

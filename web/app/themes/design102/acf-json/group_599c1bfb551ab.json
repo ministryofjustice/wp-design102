@@ -113,6 +113,99 @@
                     "min": "",
                     "max": ""
                 },
+                "59d64a85789de": {
+                    "key": "59d64a85789de",
+                    "name": "clients_list",
+                    "label": "Clients list",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59d64ba9789df",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59d64bb0789e0",
+                            "label": "Introductory text",
+                            "name": "introductory_text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_59d64bba789e1",
+                            "label": "Clients",
+                            "name": "clients",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59d64c0d789e3",
+                                    "label": "Logo",
+                                    "name": "logo",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "59c50a5b4a1dd": {
                     "key": "59c50a5b4a1dd",
                     "name": "deep_links",
@@ -331,6 +424,55 @@
                     "label": "Get In Touch",
                     "display": "block",
                     "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "59d61b35ed124": {
+                    "key": "59d61b35ed124",
+                    "name": "google_map",
+                    "label": "Google Map",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59d61b42ed125",
+                            "label": "Location",
+                            "name": "location",
+                            "type": "google_map",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "center_lat": "51.5073509",
+                            "center_lng": "-0.12775829999998223",
+                            "zoom": "",
+                            "height": ""
+                        },
+                        {
+                            "key": "field_59d623925ff9f",
+                            "label": "Zoom",
+                            "name": "zoom",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "zoom-level",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 0,
+                            "max": 22,
+                            "step": 1
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 },
@@ -1103,5 +1245,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1506977419
+    "modified": 1507219390
 }
