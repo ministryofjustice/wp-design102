@@ -3,6 +3,25 @@
     "title": "Job Vacancy",
     "fields": [
         {
+            "key": "field_59d78ab8c88f6",
+            "label": "Contract term",
+            "name": "contract_term",
+            "type": "text",
+            "instructions": "e.g. \"Fixed term for 12 months\", or \"Permanent\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Fixed term for 12 months",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_59d2a7a51b471",
             "label": "Application URL",
             "name": "application_url",
@@ -36,5 +55,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1506977722
+    "modified": 1507298096
 }

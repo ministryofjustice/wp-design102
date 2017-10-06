@@ -165,10 +165,25 @@ function filter_content_block_layouts($field) {
   $exclude_layouts = [
     // 'post_type' => [ 'block_name' ]
     'page' => [
+      'at_a_glance',
+      'job_description_infographic',
     ],
     'case-study' => [
       'page_header',
       'get_in_touch',
+      'case_studies_list',
+      'clients_list',
+      'team_members',
+      'job_description_infographic',
+      'deep_links',
+    ],
+    'job-vacancy' => [
+      'page_header',
+      'get_in_touch',
+      'case_studies_list',
+      'clients_list',
+      'team_members',
+      'deep_links',
     ],
   ];
 

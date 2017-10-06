@@ -10,7 +10,7 @@ the_post();
 
   Extras\render_block('page_header', [
     'heading' => get_the_title(),
-    'intro_text' => 'One of us',
+    'intro_text' => get_field('contract_term'),
   ]);
 
   while (have_rows('content_blocks')) {
