@@ -258,3 +258,28 @@ function my_mce_before_init_insert_formats( $init_array ) {
 }
 // Attach callback to 'tiny_mce_before_init'
 add_filter( 'tiny_mce_before_init', __NAMESPACE__ . '\\my_mce_before_init_insert_formats' );
+
+/*
+ * Customize Menu Item Classes
+ *
+ * @param array $classes, current menu classes
+ * @param object $item, current menu item
+ * @param object $args, menu arguments
+ * @return array $classes
+ */
+function menu_item_classes($classes, $item, $args) {
+  if ($args->theme_location !== 'primary_navigation') {
+    return $classes;
+  }
+
+  if (is_singular('case-study') && $item->title == 'Work') {
+    $classes[] = 'active';
+  }
+
+  if (is_singular('job-vacancy') && $item->title == 'Team') {
+    $classes[] = 'active';
+  }
+
+  return $classes;
+}
+add_filter('nav_menu_css_class', __NAMESPACE__ . '\\menu_item_classes', 10, 3);
