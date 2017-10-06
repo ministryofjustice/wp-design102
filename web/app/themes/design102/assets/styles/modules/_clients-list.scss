@@ -1,13 +1,31 @@
 .clients-list {
-  text-align: center;
-
   .row {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  .clients-list__row {
+    //margin: ( $grid-gutter-width / 2 ) 0;
+  }
+
+  .clients-list__client {
+    flex: 0 1 50%; // 2 logos per row
+    padding: ( $grid-gutter-width / 2 );
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      flex-basis: 25%; // 4 logos per row
+    }
+  }
+
   img {
     max-width: 100%;
     height: auto;
+    width: auto;
+    max-height: 100px;
   }
 }

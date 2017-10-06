@@ -8,23 +8,28 @@
     <div class="clients-list">
       <?php
 
-      foreach ($fields['clients'] as $i => $client){
-        if ($i % 4 == 0) {
-          echo '<div class="row">';
-        }
-
-        echo '<div class="col">';
-
-        echo wp_get_attachment_image($client['logo']['id']);
-
+      foreach (array_slice($fields['clients'], 0, 4) as $i => $client) {
+        echo '<div class="clients-list__client">';
+        echo wp_get_attachment_image($client['logo']['id'], 'full');
         echo '</div>';
-
-        if ($i % 4 == 3 || $i == count($fields['clients']) - 1) {
-          echo '</div>';
-        }
       }
 
       ?>
+    </div>
+
+    <div class="clients-list expandable__content">
+      <?php
+
+      foreach (array_slice($fields['clients'], 4) as $i => $client) {
+        echo '<div class="clients-list__client">';
+        echo wp_get_attachment_image($client['logo']['id'], 'full');
+        echo '</div>';
+      }
+
+      ?>
+    </div>
+    <div class="expandable__trigger">
+      <a href="#" class="btn">Show all clients</a>
     </div>
 
   </div>

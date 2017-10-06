@@ -44,14 +44,21 @@ $term = get_term($fields['team'], 'team');
     if ($members->current_post % 4 == 3 || $members->current_post == ($members->post_count - 1)) {
       echo '</div>';
     }
+
+    if ($members->current_post == 3) {
+      echo '<div class="expandable__content">';
+    }
+    if ($members->current_post == ($members->post_count - 1)) {
+      echo '</div>';
+    }
   }
 
   ?>
 
   <?php if ($members->post_count > 4): ?>
-    <div class="team-members-block__show-more">
-      <a href="#" class="btn">See more people</a>
-    </div>
+  <div class="expandable__trigger">
+    <a href="#" class="btn">See all people</a>
+  </div>
   <?php endif; ?>
 
   <?php wp_reset_postdata(); ?>
