@@ -76,6 +76,7 @@ define('DISABLE_WP_CRON', true);
 define('DISALLOW_FILE_EDIT', true);
 define('WP_DEFAULT_THEME', 'design102');
 define('S3_UPLOADS_BASE_URL', getenv('S3_UPLOADS_BASE_URL') ? getenv('S3_UPLOADS_BASE_URL') : false);
+define('GOOGLE_MAPS_API_KEY', 'AIzaSyCQRwI_3w1D-QFQ3t552FYjqyiRL_QtqSw');
 
 /**
  * Bootstrap WordPress
