@@ -1,0 +1,29 @@
+.infographic-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  .infographic-block__icon {
+    padding: ( $grid-gutter-width / 2 );
+    text-align: center;
+    flex: 0 1 50%; // 2 logos per row
+
+    @include media-breakpoint-up(sm) {
+      flex: 0 1 33.33%; // 3 logos per row
+    }
+
+    @include media-breakpoint-up(md) {
+      flex: 0 1 20%; // 5 logos per row
+    }
+  }
+
+  img {
+    width: auto;
+    height: 70px;
+  }
+
+  p {
+    margin: 0.6rem 0 0 0;
+  }
+}
