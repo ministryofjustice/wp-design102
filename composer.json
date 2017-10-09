@@ -47,7 +47,9 @@
     "johnpbloch/wordpress": "^4.8.0",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "acf/advanced-custom-fields-pro": "*"
+    "acf/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/metronet-reorder-posts": "*",
+    "wpackagist-plugin/reorder-by-term": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
