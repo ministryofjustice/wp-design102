@@ -1,0 +1,13 @@
+.expandable__content {
+}
+
+.expandable__trigger .btn {
+  display: block;
+
+  &:after {
+    content: '>';
+    margin-left: 0.4em;
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+}

@@ -1,0 +1,44 @@
+/**
+ * Extensions to bootstrap's card component
+ */
+
+.card-img-overlay-gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $card-img-overlay-padding;
+  max-height: 100%;
+  background-color: rgba($black, 0.7);
+
+  @include media-breakpoint-up(sm) {
+    top: auto;
+    padding-top: $card-img-overlay-padding * 2;
+    background-color: transparent;
+    @include gradient-y(rgba(#000, 0), rgba(#000, 1));
+    @include transition($btn-transition);
+
+    a:hover .card &,
+    a:focus .card & {
+      padding-top: $card-img-overlay-padding * 3;
+      padding-bottom: $card-img-overlay-padding * 1.2;
+    }
+  }
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+  height: auto;
+}
+
+// Responsive font size
+.card-title {
+  font-size: $h4-font-size;
+
+  @include media-breakpoint-up(sm) {
+    font-size: $h2-font-size;
+  }
+}
+.card-subtitle {
+  font-size: $font-size-base;
+}

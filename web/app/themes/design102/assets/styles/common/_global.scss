@@ -5,3 +5,8 @@ body {
 .heading-centered {
   text-align: center;
 }
+
+ul.two-cols {
+  column-count: 2;
+  list-style-position: inside;
+}

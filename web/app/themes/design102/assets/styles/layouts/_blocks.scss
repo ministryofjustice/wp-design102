@@ -3,4 +3,14 @@
     margin-top: $grid-gutter-width;
     margin-bottom: $grid-gutter-width;
   }
+
+  // Don't put top & bottom margin on nested block layouts
+  .l-blocks > .row {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
