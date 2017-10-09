@@ -2,16 +2,30 @@
   font-size: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  text-align: center;
 
-  > p {
-    font-size: 1.5rem;
-    font-weight: 300;
+  .testimonial__quote {
+    font-size: $font-size-lg;
+
+    /* wrap with curly quotes */
+    :first-child:before {
+      content: "\201C";
+    }
+    :last-child:after {
+      content: "\201D";
+    }
   }
 
   > footer {
-    border-top: 3px solid currentColor;
-    padding-top: 0.625rem;
     margin-top: 1rem;
+
+    &:before {
+      content: '';
+      display: block;
+      width: (1/3) * 100%;
+      border-top: 3px solid currentColor;
+      margin: 0.625rem auto;
+    }
 
     > .person {
       font-weight: bold;

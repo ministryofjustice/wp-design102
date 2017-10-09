@@ -18,7 +18,6 @@ the_post();
   }
 
   Extras\render_block('get_in_touch');
-  Extras\render_block('case_studies_carousel', ['heading' => 'Other projects']);
 
   ?>
 </div>

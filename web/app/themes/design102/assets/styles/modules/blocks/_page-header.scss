@@ -1,50 +1,13 @@
 .page-header-block {
-  text-align: center;
   margin: 0;
   padding-top: 1rem;
-  padding-bottom: 1rem;
 
-  .page-header-block__subheading {
+  .page-header-block__header {
+    margin-bottom: 0;
+  }
+
+  .page-header-block__intro {
     @extend .lead;
-  }
-}
-
-/**
- * Jumbo page headers are larger and have a background image
- */
-.page-header-block--jumbo {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  background-color: $jumbotron-bg;
-  background-position: center center;
-  background-size: cover;
-  color: #fff;
-  position: relative;
-
-  @include media-breakpoint-up(md) {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  @include media-breakpoint-up(lg) {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  // Make text elements appear over the &:after overlay
-  > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-    opacity: 0.4;
+    margin-top: 0.6em;
   }
 }

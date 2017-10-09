@@ -1,7 +1,5 @@
 .text-block {
-  padding: 3rem 1rem;
-  background-color: $gray-200;
-  font-size: 1.25rem;
+  padding: 1rem;
 
   @include media-breakpoint-up(sm) {
     padding-left: 2rem;
@@ -9,14 +7,26 @@
   }
 
   .text-block__content {
-    max-width: 570px;
+    max-width: 750px;
     margin: 0 auto;
   }
 
   /**
    * Two-columns of text
    */
-  .col-md-6 .text-block__content {
-    max-width: 400px;
+  @include media-breakpoint-up(md) {
+    .col-md-6 .text-block__content {
+      max-width: 400px;
+    }
+  }
+
+  // Light grey
+  &.text-block--light-grey {
+    background-color: $gray-200;
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
   }
 }

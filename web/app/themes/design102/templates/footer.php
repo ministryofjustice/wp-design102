@@ -24,9 +24,9 @@ use Roots\Sage\Extras;
         </div>
         <div class="col-12 col-sm-6 col-md-3">
             Follow us on:
-            <a href="#"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#vimeo') ?>" /></svg></a>
-            <a href="#"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#twitter') ?>" /></svg></a>
-            <a href="#"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#instagram') ?>" /></svg></a>
+            <a href="<?= get_field('social_profile_vimeo', 'options') ?>"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#vimeo') ?>" /></svg></a>
+            <a href="<?= get_field('social_profile_twitter', 'options') ?>"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#twitter') ?>" /></svg></a>
+            <a href="<?= get_field('social_profile_instagram', 'options') ?>"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#instagram') ?>" /></svg></a>
         </div>
     </div>
   </div>
