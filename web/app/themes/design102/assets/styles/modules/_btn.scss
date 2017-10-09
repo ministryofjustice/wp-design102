@@ -1,7 +1,0 @@
-/**
- * Extensions to bootstrap's button component
- */
-
-.btn-outline-white {
-  @include button-outline-variant($white, $gray-800);
-}

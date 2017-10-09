@@ -2,16 +2,9 @@
   @extend .jumbotron;
   text-align: center;
   position: relative;
-  color: #fff;
-  padding: 3rem 2rem;
+  padding: 2rem;
   margin: 0;
-  background: #006E42;
-
-  @include media-breakpoint-up(sm) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
+  background: transparent;
 
   // Make text elements appear over the &:after overlay
   > * {
