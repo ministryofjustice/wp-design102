@@ -22,10 +22,6 @@ use Roots\Sage\Wrapper;
 
         include Wrapper\template_path();
 
-        if (Setup\display_sidebar()) {
-            include Wrapper\sidebar_path();
-        }
-
         ?>
     </div>
     <?php
