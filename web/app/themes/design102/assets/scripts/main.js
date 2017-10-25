@@ -146,6 +146,9 @@
       };
 
       member.hover(mouseover, mouseout);
+      member.on('click', function(e) {
+        e.preventDefault();
+      });
     });
   });
 
