@@ -4,11 +4,21 @@ use Roots\Sage\Extras;
 
 $style = [];
 $class = ['testimonial-block'];
-if (!empty($fields['background_colour'])) {
+$btn_class = ['btn btn-lg'];
+
+if (empty($fields['background_colour'])) {
+  $fields['background_colour'] = '#EB6600';
+}
+else {
   $style['background-color'] = $fields['background_colour'];
-  if (Extras\contrastingTextColour($fields['background_colour']) == 'white') {
-    $class[] = 'text-white';
-  }
+}
+
+if (Extras\contrastingTextColour($fields['background_colour']) == 'white') {
+  $class[] = 'text-white';
+  $btn_class[] = 'btn-outline-white';
+}
+else {
+  $btn_class[] = 'btn-outline-primary';
 }
 
 ?>
@@ -21,13 +31,8 @@ if (!empty($fields['background_colour'])) {
 
     <?php
 
-    $person = !empty($fields['person']) ? wptexturize($fields['person']) : false;
-    $org = !empty($fields['organisation']) ? wptexturize($fields['organisation']) : false;
-    if ($person || $org) {
-      echo '<footer>';
-      if ($person) echo '<div class="person">' . $person . '</div>';
-      if ($org) echo '<div class="org">' . $org . '</div>';
-      echo '</footer>';
+    if (!empty($fields['person'])) {
+      echo '<footer>' . wptexturize($fields['person']) . '</footer>';
     }
 
     ?>
@@ -35,9 +40,14 @@ if (!empty($fields['background_colour'])) {
 
   <?php
 
-  if (!empty($fields['strapline'])) {
-    echo '<div class="testimonial-block__strapline">';
-    echo $fields['strapline'];
+  if (!empty($fields['button_text']) && !empty($fields['button_link'])) {
+    echo '<div class="testimonial-block__cta">';
+    echo sprintf(
+      '<a href="%s" class="%s">%s</a>',
+      esc_attr($fields['button_link']),
+      esc_attr(implode(' ', $btn_class)),
+      wptexturize($fields['button_text'])
+    );
     echo '</div>';
   }
 

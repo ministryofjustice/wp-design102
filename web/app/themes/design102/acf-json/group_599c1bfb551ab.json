@@ -1045,9 +1045,9 @@
                             "key": "field_599c3db9afb27",
                             "label": "Person",
                             "name": "person",
-                            "type": "text",
+                            "type": "textarea",
                             "value": null,
-                            "instructions": "Name and job title of the person being quoted",
+                            "instructions": "Name \/ role \/ organisation of the person being quoted",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1056,22 +1056,22 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "Name, Job Title",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "br"
                         },
                         {
-                            "key": "field_599c3dd0afb28",
-                            "label": "Organisation",
-                            "name": "organisation",
+                            "key": "field_59f1c3dcbab4d",
+                            "label": "Button text",
+                            "name": "button_text",
                             "type": "text",
                             "value": null,
-                            "instructions": "Organisation the person is from",
+                            "instructions": "Optional",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -1082,24 +1082,28 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_59cd279518871",
-                            "label": "Strapline",
-                            "name": "strapline",
-                            "type": "wysiwyg",
+                            "key": "field_59f1c3f0bab4e",
+                            "label": "Button link",
+                            "name": "button_link",
+                            "type": "page_link",
                             "value": null,
-                            "instructions": "Text to show underneath the testimonial. Optional.",
+                            "instructions": "Optional",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 0,
-                            "delay": 0
+                            "post_type": [
+                                "page",
+                                "case-study",
+                                "job-vacancy"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 1,
+                            "allow_archives": 0,
+                            "multiple": 0
                         },
                         {
                             "key": "field_59ce08d06d0f0",
@@ -1437,5 +1441,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1508839777
+    "modified": 1509021357
 }
