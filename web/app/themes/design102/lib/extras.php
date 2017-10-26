@@ -140,6 +140,7 @@ function class_attr($classes) {
  */
 function contrastingTextColour($hexcolor) {
   $hexcolor = preg_replace('/[#\s]/', '', $hexcolor);
+  if ($hexcolor == 'EB6600') return 'white';
   $r = hexdec(substr($hexcolor, 0, 2));
   $g = hexdec(substr($hexcolor, 2, 2));
   $b = hexdec(substr($hexcolor, 4, 2));

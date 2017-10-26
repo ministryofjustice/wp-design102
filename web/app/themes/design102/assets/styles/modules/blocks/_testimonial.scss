@@ -1,6 +1,12 @@
 .testimonial-block {
   padding: 2rem 1rem;
-  background-color: $gray-200;
+  background: theme-color('primary') repeating-linear-gradient(
+    45deg,
+    rgba($black, 0),
+    rgba($black, 0) 15px,
+    rgba($black, 0.03) 15px,
+    rgba($black, 0.03) 18px
+  ) center top;
   text-align: center;
 
   > .testimonial {
@@ -8,9 +14,9 @@
     margin: 0 auto;
   }
 
-  > .testimonial-block__strapline {
+  > .testimonial-block__cta {
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
   }
 
   @include media-breakpoint-up(sm) {

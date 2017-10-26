@@ -96,7 +96,7 @@
   // Navbar float
   $(function(){
     // Navbar will float this many pixels down the page
-    var floatAfter = 30;
+    var floatAfter = 15;
     var navbar = $('.navbar-light');
 
     var floatHeader = function() {
