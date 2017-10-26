@@ -4,7 +4,7 @@ use Roots\Sage\Extras;
 
 $style = [];
 $class = ['testimonial-block'];
-$btn_class = ['btn btn-lg'];
+$btn_class = ['btn'];
 
 if (empty($fields['background_colour'])) {
   $fields['background_colour'] = '#EB6600';
