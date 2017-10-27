@@ -85,8 +85,7 @@
       slidesContainer.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: false,
-        prevArrow: false,
+        arrows: true,
         dots: true,
         adaptiveHeight: true
       });
