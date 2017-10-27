@@ -82,6 +82,7 @@
     var slidesContainer = $(carousel).find('.carousel__slides');
 
     if (slidesContainer.find('> li').length > 1) {
+      $(carousel).find('.carousel').addClass('carousel--active');
       slidesContainer.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
