@@ -3,15 +3,25 @@
   $sizes = '(min-width: 1140px) 540px, (max-width: 575px) calc(100vw - 30px), calc(50vw - 30px)';
   ?>
   <div class="row">
-    <div class="col-sm-6">
-      <a href="<?= $fields['image_1']['image']['url'] ?>" class="zoomable mfp-zoom" title="<?= esc_attr($fields['image_1']['caption']) ?>">
-        <?= wp_get_attachment_image($fields['image_1']['image']['ID'], '4x3_medium', false, ['sizes' => $sizes]) ?>
-      </a>
-    </div>
-    <div class="col-sm-6">
-      <a href="<?= $fields['image_2']['image']['url'] ?>" class="zoomable mfp-zoom" title="<?= esc_attr($fields['image_2']['caption']) ?>">
-        <?= wp_get_attachment_image($fields['image_2']['image']['ID'], '4x3_medium', false, ['sizes' => $sizes]) ?>
-      </a>
-    </div>
+    <?php foreach (['image_1', 'image_2'] as $k): ?>
+      <div class="col-sm-6">
+        <?php
+
+        $img_id = $fields[$k]['image']['ID'];
+        $img_url = $fields[$k]['image']['url'];
+        $caption = wptexturize($fields[$k]['caption']);
+
+        ?>
+
+        <a href="<?= esc_attr($img_url) ?>" class="zoomable mfp-zoom" title="<?= esc_attr($caption) ?>">
+          <?= wp_get_attachment_image($img_id, '4x3_medium', false, ['sizes' => $sizes]) ?>
+        </a>
+
+        <?php if (!empty($caption)): ?>
+          <p class="caption"><?= $caption ?></p>
+        <?php endif; ?>
+
+      </div>
+    <?php endforeach; ?>
   </div>
 </div>
