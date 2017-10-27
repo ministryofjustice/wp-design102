@@ -17,98 +17,6 @@
                 "id": ""
             },
             "layouts": {
-                "59cd147b38d26": {
-                    "key": "59cd147b38d26",
-                    "name": "at_a_glance",
-                    "label": "At A Glance",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_59cd19f700108",
-                            "label": "Heading",
-                            "name": "heading",
-                            "type": "text",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_59cd149038d28",
-                            "label": "Summary Fields",
-                            "name": "summary_fields",
-                            "type": "repeater",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "table",
-                            "button_label": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_59cd14b138d29",
-                                    "label": "Key",
-                                    "name": "key",
-                                    "type": "text",
-                                    "value": null,
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
-                                {
-                                    "key": "field_59cd14b738d2a",
-                                    "label": "Value",
-                                    "name": "value",
-                                    "type": "text",
-                                    "value": null,
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "59c527ab1cfb7": {
                     "key": "59c527ab1cfb7",
                     "name": "case_studies_list",
@@ -448,6 +356,98 @@
                                     "toolbar": "full",
                                     "media_upload": 1,
                                     "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59cd147b38d26": {
+                    "key": "59cd147b38d26",
+                    "name": "definition_list",
+                    "label": "Definition List",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59cd19f700108",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59cd149038d28",
+                            "label": "Summary Fields",
+                            "name": "summary_fields",
+                            "type": "repeater",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59cd14b138d29",
+                                    "label": "Key",
+                                    "name": "key",
+                                    "type": "text",
+                                    "value": null,
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_59cd14b738d2a",
+                                    "label": "Value",
+                                    "name": "value",
+                                    "type": "text",
+                                    "value": null,
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ]
                         }
@@ -1497,5 +1497,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1509109866
+    "modified": 1509114601
 }

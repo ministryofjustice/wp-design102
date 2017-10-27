@@ -6,6 +6,16 @@ body {
   text-align: center;
 }
 
+ul {
+  margin-left: 0.1em;
+  padding-left: 0;
+  list-style-position: inside;
+
+  ul {
+    margin-left: 1.5em;
+  }
+}
+
 ul.two-cols {
   column-count: 2;
   list-style-position: inside;

@@ -1,14 +1,6 @@
 .text-block {
-  padding: 1rem;
-
-  @include media-breakpoint-up(sm) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .text-block__content {
-    max-width: 750px;
-    margin: 0 auto;
+    max-width: 620px;
   }
 
   /**
@@ -22,11 +14,11 @@
 
   // Light grey
   &.text-block--light-grey {
+    padding: 1rem;
     background-color: $gray-200;
 
     @include media-breakpoint-up(sm) {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding: 2rem;
     }
   }
 }
