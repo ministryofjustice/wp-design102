@@ -1,6 +1,9 @@
 .carousel {
   position: relative;
-  padding-bottom: 3rem;
+
+  &.carousel--active {
+    padding-bottom: 3rem;
+  }
 
   $dot-colour: theme-color("primary");
 
