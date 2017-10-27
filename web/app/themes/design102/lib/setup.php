@@ -126,7 +126,6 @@ function filter_content_block_layouts($field) {
   $exclude_layouts = [
     // 'post_type' => [ 'block_name' ]
     'page' => [
-      'at_a_glance',
       'job_description_infographic',
     ],
     'case-study' => [
