@@ -46,7 +46,6 @@ use Roots\Sage\Extras;
           <?php if (!empty($slide['link_to_page'])): ?>
           </a>
           <?php endif; ?>
-
         </li>
       <?php endforeach; ?>
     </ul>
