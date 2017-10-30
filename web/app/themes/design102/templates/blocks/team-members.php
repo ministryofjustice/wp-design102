@@ -57,7 +57,7 @@ $term = get_term($fields['team'], 'team');
 
   <?php if ($members->post_count > 4): ?>
   <div class="expandable__trigger">
-    <a href="#" class="btn">See all people</a>
+    <a href="#" class="btn">See more people</a>
   </div>
   <?php endif; ?>
 
