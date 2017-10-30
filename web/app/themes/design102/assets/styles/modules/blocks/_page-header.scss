@@ -1,13 +1,16 @@
 .page-header-block {
   margin: 0;
-  padding-top: 1rem;
 
   .page-header-block__header {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .page-header-block__intro {
     @extend .lead;
     margin-top: 0.6em;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 }

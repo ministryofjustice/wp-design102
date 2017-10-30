@@ -6,7 +6,7 @@ $case_studies = new WP_Query([
 ]);
 
 if ($case_studies->have_posts()) {
-  echo '<div class="l-blocks">';
+  echo '<div class="l-blocks case-studies-list-block">';
 
   while ($case_studies->have_posts()) {
     $case_studies->the_post();
