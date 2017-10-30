@@ -1,0 +1,67 @@
+.cs-nav {
+  background-color: $gray-200;
+  border-bottom: 2px solid $gray-500;
+  text-align: center;
+  font-size: $font-size-lg;
+  font-weight: bold;
+  height: $font-size-lg * 5;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  @include transition($btn-transition);
+
+  &, &:hover, &:active {
+    text-decoration: none;
+    color: $gray-700;
+  }
+
+  &:hover, &:active {
+    background-color: darken($gray-200, 5%);
+  }
+
+  &:active {
+    border-bottom: 0;
+    margin-bottom: -2px;
+  }
+
+  .cs-nav__content {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .cs-nav__name {
+    font-weight: normal;
+
+    > span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+    }
+  }
+}
+
+.cs-nav--left:before,
+.cs-nav--right:after {
+  vertical-align: middle;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+.cs-nav--left:before {
+  content: '<';
+  padding-left: 2rem;
+}
+
+.cs-nav--right:after {
+  content: '>';
+  padding-right: 2rem;
+}
+
+.col-sm-6:first-child .cs-nav {
+  margin-bottom: ( $grid-gutter-width / 2 );
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 0;
+  }
+}

@@ -17,6 +17,7 @@ the_post();
     Extras\render_block($block_type, $fields);
   }
 
+  Extras\render_block('case_study_navigation');
   Extras\render_block('get_in_touch');
 
   ?>

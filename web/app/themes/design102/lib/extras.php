@@ -147,3 +147,11 @@ function contrastingTextColour($hexcolor) {
   $yiq = ( ($r*299) + ($g*587) + ($b*114) ) / 1000;
   return ( $yiq >= 128 ) ? 'black' : 'white';
 }
+
+function substr_with_ellipsis($string, $length, $ellipsis = '…') {
+  if (strlen($string) > $length) {
+    $target_length = $length - strlen($ellipsis);
+    $string = substr($string, 0, $target_length) . $ellipsis;
+  }
+  return $string;
+}
