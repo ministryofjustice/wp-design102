@@ -1,20 +1,17 @@
 .clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
   .row {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  .clients-list__row {
-    //margin: ( $grid-gutter-width / 2 ) 0;
-  }
-
   .clients-list__client {
     flex: 0 1 50%; // 2 logos per row
-    padding: ( $grid-gutter-width / 2 );
+    padding: ( $grid-gutter-width / 2 ) 0;
     text-align: center;
 
     @include media-breakpoint-up(sm) {
