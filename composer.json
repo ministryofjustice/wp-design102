@@ -50,7 +50,8 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "acf/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/metronet-reorder-posts": "*",
-    "wpackagist-plugin/reorder-by-term": "*"
+    "wpackagist-plugin/reorder-by-term": "*",
+    "ministryofjustice/wp-rewrite-media-to-s3": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

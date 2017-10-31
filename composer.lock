@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "16b48d3317239ef243d8786d92a7b380",
+    "content-hash": "54e4c7adf75c7b2df89a70c5596eaa50",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -315,6 +315,37 @@
             ],
             "description": "Install packages or a few files from packages into custom paths without overwriting existing stuff.",
             "time": "2017-01-11T19:10:05+00:00"
+        },
+        {
+            "name": "ministryofjustice/wp-rewrite-media-to-s3",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3.git",
+                "reference": "8c9c6fee624787ccc14ecd22ddfc5e73f456be81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-rewrite-media-to-s3/ministryofjustice-wp-rewrite-media-to-s3-8c9c6fee624787ccc14ecd22ddfc5e73f456be81-zip-c4ed0a.zip",
+                "reference": "8c9c6fee624787ccc14ecd22ddfc5e73f456be81",
+                "shasum": "e3904039460079ce4168e577fc31d0818407efb7"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Ollie Treend",
+                    "email": "ollie.treend@digital.justice.gov.uk"
+                }
+            ],
+            "description": "A WordPress plugin which rewrites media attachment URLs to S3.",
+            "support": {
+                "source": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/tree/0.1.1",
+                "issues": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/issues"
+            },
+            "time": "2017-03-06T17:20:15+00:00"
         },
         {
             "name": "oscarotero/env",
