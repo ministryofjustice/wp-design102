@@ -1,7 +1,7 @@
 .site-footer {
   font-size: $font-size-sm;
   color: $gray-700;
-  padding: $grid-gutter-width 0 ($grid-gutter-width * 2) 0;
+  padding: $grid-gutter-width 0;
   background-color: $gray-200;
 
   a {
@@ -9,5 +9,9 @@
     &:hover {
       color: $gray-800;
     }
+  }
+
+  .col-12 {
+    margin-bottom: $grid-gutter-width / 2;
   }
 }
