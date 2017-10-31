@@ -6,8 +6,6 @@ use Roots\Sage\Extras;
 
 <footer class="site-footer">
   <div class="l-page-container">
-    <?php //dynamic_sidebar('sidebar-footer'); ?>
-
     <div class="row">
         <div class="col-12 col-sm-6 col-md-3">
             &copy; <?= date('Y') ?> design102
@@ -24,9 +22,9 @@ use Roots\Sage\Extras;
         </div>
         <div class="col-12 col-sm-6 col-md-3">
             Follow us on:
-            <a href="<?= get_field('social_profile_vimeo', 'options') ?>"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#vimeo') ?>" /></svg></a>
-            <a href="<?= get_field('social_profile_twitter', 'options') ?>"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#twitter') ?>" /></svg></a>
-            <a href="<?= get_field('social_profile_instagram', 'options') ?>"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#instagram') ?>" /></svg></a>
+            <a href="<?= get_field('social_profile_vimeo', 'options') ?>" target="_blank"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#vimeo') ?>" /></svg></a>
+            <a href="<?= get_field('social_profile_twitter', 'options') ?>" target="_blank"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#twitter') ?>" /></svg></a>
+            <a href="<?= get_field('social_profile_instagram', 'options') ?>" target="_blank"><svg class="social-icon"><use xlink:href="<?= Extras\asset_url('images/social-icons.svg#instagram') ?>" /></svg></a>
         </div>
     </div>
   </div>
