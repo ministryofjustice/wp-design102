@@ -1,12 +1,6 @@
 .testimonial-block {
   padding: 2rem 1rem;
-  background: theme-color('primary') repeating-linear-gradient(
-    45deg,
-    rgba($black, 0),
-    rgba($black, 0) 15px,
-    rgba($black, 0.03) 15px,
-    rgba($black, 0.03) 18px
-  ) center top;
+  background: theme-color('primary');
   text-align: center;
 
   > .testimonial {
