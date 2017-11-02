@@ -92,7 +92,7 @@ $colors: (
 
 $theme-colors: (
   /* Changed from default */
-  primary: #EB6600,
+  primary: #EF7B10,
   /* The rest are unchanged defaults */
   secondary: $gray-600,
   success: $green,
@@ -107,3 +107,6 @@ $theme-colors: (
 $navbar-light-color:                $black;
 $navbar-light-hover-color:          $black;
 $navbar-light-active-color:         $black;
+
+// Body fonts
+$body-color:    $gray-800;
