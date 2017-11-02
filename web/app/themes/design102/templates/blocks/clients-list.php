@@ -28,7 +28,7 @@
     ?>
   </div>
   <div class="expandable__trigger">
-    <a href="#" class="btn">Show all clients</a>
+    <a href="#" class="btn">Show more clients</a>
   </div>
 
 </div>
