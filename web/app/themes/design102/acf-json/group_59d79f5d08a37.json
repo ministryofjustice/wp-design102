@@ -1,44 +1,53 @@
 {
     "key": "group_59d79f5d08a37",
-    "title": "Social Media Links",
+    "title": "Site Footer Content",
     "fields": [
         {
-            "key": "field_59d79f638128b",
-            "label": "Vimeo",
-            "name": "social_profile_vimeo",
-            "type": "url",
+            "key": "field_59fb2b883d685",
+            "label": "Column 1",
+            "name": "footer_column_1",
+            "type": "wysiwyg",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "placeholder": ""
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         },
         {
-            "key": "field_59d79f728128c",
-            "label": "Twitter",
-            "name": "social_profile_twitter",
-            "type": "url",
+            "key": "field_59fb2bb93d686",
+            "label": "Column 2",
+            "name": "footer_column_2",
+            "type": "wysiwyg",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "placeholder": ""
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         },
         {
-            "key": "field_59d79f798128d",
-            "label": "Instagram",
-            "name": "social_profile_instagram",
-            "type": "url",
+            "key": "field_59fb2b293d681",
+            "label": "Social Media Links",
+            "name": "social_media_links",
+            "type": "group",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -47,8 +56,60 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_59fb2b543d682",
+                    "label": "Vimeo",
+                    "name": "vimeo",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59fb2b6b3d683",
+                    "label": "Twitter",
+                    "name": "twitter",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59fb2b733d684",
+                    "label": "Instagram",
+                    "name": "instagram",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -68,5 +129,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1507303331
+    "modified": 1509633417
 }
