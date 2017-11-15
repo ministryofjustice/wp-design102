@@ -17,6 +17,13 @@
       "main": [
         "./jquery.ba-throttle-debounce.js"
       ]
+    },
+    "bootstrap": {
+      "main": [
+        "scss/bootstrap.scss",
+        "js/dist/util.js",
+        "js/dist/dropdown.js"
+      ]
     }
   }
 }
