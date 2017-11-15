@@ -29,21 +29,23 @@
       }
     }
 
-    .show > .nav-link span,
-    .active > .nav-link span,
-    .nav-link.show span,
-    .nav-link:hover span,
-    .nav-link.active span {
-      position: relative;
-      display: inline-block;
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link:hover,
+    .nav-link.active {
+      span:not(.caret) {
+        position: relative;
+        display: inline-block;
 
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: -0.2rem;
-        left: -0.2rem;
-        right: -0.2rem;
-        border-bottom: 3px solid theme-color("primary");
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -0.2rem;
+          left: -0.2rem;
+          right: -0.2rem;
+          border-bottom: 3px solid theme-color("primary");
+        }
       }
     }
   }
