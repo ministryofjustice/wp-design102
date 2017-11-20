@@ -53,6 +53,7 @@
     color: $white;
     padding: 0 0.8rem;
     margin-top: -2rem;
+    border-radius: 0;
     @include transition($btn-transition);
 
     @include media-breakpoint-up(sm) {

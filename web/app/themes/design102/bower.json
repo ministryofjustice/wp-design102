@@ -22,6 +22,7 @@
       "main": [
         "scss/bootstrap.scss",
         "js/dist/util.js",
+        "js/dist/collapse.js",
         "js/dist/dropdown.js"
       ]
     }
