@@ -7,15 +7,18 @@
   .testimonial__quote {
     font-size: $font-size-lg;
 
-    &:before {
+    p:first-child:before {
       content: "\201C";
-      font-size: 7.5rem;
-      display: block;
-      margin-top: 0.2em;
-      margin-bottom: -0.1em;
-      line-height: 0.5em;
-      font-weight: 400;
-      font-style: normal;
+    }
+    p:last-child:after {
+      content: "\201D";
+      //font-size: 7.5rem;
+      //display: block;
+      //margin-top: 0.2em;
+      //margin-bottom: -0.1em;
+      //line-height: 0.5em;
+      //font-weight: 400;
+      //font-style: normal;
     }
   }
 
