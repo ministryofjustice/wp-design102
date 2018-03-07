@@ -5,3 +5,7 @@
 .btn-outline-white {
   @include button-outline-variant($white, $gray-800);
 }
+
+.btn-orange-outline-white {
+  @include button-outline-variant($white, theme-color('primary'));
+}

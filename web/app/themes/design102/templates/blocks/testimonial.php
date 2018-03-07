@@ -18,7 +18,7 @@
   if (!empty($fields['button_text']) && !empty($fields['button_link'])) {
     echo '<div class="testimonial-block__cta">';
     echo sprintf(
-      '<a href="%s" class="btn btn-outline-white">%s</a>',
+      '<a href="%s" class="btn btn-orange-outline-white">%s</a>',
       esc_attr($fields['button_link']),
       wptexturize($fields['button_text'])
     );
