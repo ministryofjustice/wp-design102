@@ -7,7 +7,6 @@
             "label": "Content Blocks",
             "name": "content_blocks",
             "type": "flexible_content",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -55,7 +54,6 @@
                             "label": "Heading",
                             "name": "heading",
                             "type": "text",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -75,7 +73,6 @@
                             "label": "Introductory text",
                             "name": "introductory_text",
                             "type": "wysiwyg",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -95,7 +92,6 @@
                             "label": "Clients",
                             "name": "clients",
                             "type": "repeater",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -115,7 +111,6 @@
                                     "label": "Logo",
                                     "name": "logo",
                                     "type": "image",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -152,7 +147,6 @@
                             "label": "Link 1",
                             "name": "link_1",
                             "type": "group",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -168,7 +162,6 @@
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -193,7 +186,6 @@
                                     "label": "Heading",
                                     "name": "heading",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -213,7 +205,6 @@
                                     "label": "Link to page",
                                     "name": "link_to_page",
                                     "type": "page_link",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -236,7 +227,6 @@
                                     "label": "Text",
                                     "name": "text",
                                     "type": "wysiwyg",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -258,7 +248,6 @@
                             "label": "Link 2",
                             "name": "link_2",
                             "type": "group",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -274,7 +263,6 @@
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -299,7 +287,6 @@
                                     "label": "Heading",
                                     "name": "heading",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -319,7 +306,6 @@
                                     "label": "Link to page",
                                     "name": "link_to_page",
                                     "type": "page_link",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -342,7 +328,6 @@
                                     "label": "Text",
                                     "name": "text",
                                     "type": "wysiwyg",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -374,7 +359,6 @@
                             "label": "Heading",
                             "name": "heading",
                             "type": "text",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -394,7 +378,6 @@
                             "label": "Summary Fields",
                             "name": "summary_fields",
                             "type": "repeater",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -414,7 +397,6 @@
                                     "label": "Key",
                                     "name": "key",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -434,7 +416,6 @@
                                     "label": "Value",
                                     "name": "value",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -493,7 +474,6 @@
                             "label": "Location",
                             "name": "location",
                             "type": "google_map",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -512,7 +492,6 @@
                             "label": "Zoom",
                             "name": "zoom",
                             "type": "number",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -544,7 +523,6 @@
                             "label": "Slides",
                             "name": "slides",
                             "type": "repeater",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -564,7 +542,6 @@
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -589,7 +566,6 @@
                                     "label": "Heading",
                                     "name": "heading",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -609,7 +585,6 @@
                                     "label": "Subheading",
                                     "name": "subheading",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -629,7 +604,6 @@
                                     "label": "Link to page",
                                     "name": "link_to_page",
                                     "type": "page_link",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -660,16 +634,47 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_59ce5ac48f3cd",
-                            "label": "Image",
-                            "name": "image",
-                            "type": "image",
-                            "value": null,
+                            "key": "field_5aa0135569231",
+                            "label": "Type",
+                            "name": "type",
+                            "type": "radio",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "image": "Image",
+                                "animation": "Animation"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "image",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_59ce5ac48f3cd",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5aa0135569231",
+                                        "operator": "==",
+                                        "value": "image"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -685,11 +690,37 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_5aa0137d69232",
+                            "label": "Animation",
+                            "name": "animation",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5aa0135569231",
+                                        "operator": "==",
+                                        "value": "animation"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": "mp4"
+                        },
+                        {
                             "key": "field_59f314da6e278",
                             "label": "Caption",
                             "name": "caption",
                             "type": "text",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -719,7 +750,6 @@
                             "label": "Image 1",
                             "name": "image_1",
                             "type": "group",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -731,14 +761,45 @@
                             "layout": "block",
                             "sub_fields": [
                                 {
+                                    "key": "field_5aa0122a72e1c",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "image": "Image",
+                                        "animation": "Animation"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "save_other_choice": 0,
+                                    "default_value": "image",
+                                    "layout": "horizontal",
+                                    "return_format": "value"
+                                },
+                                {
                                     "key": "field_59f32ad75c584",
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
-                                    "conditional_logic": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa0122a72e1c",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -756,11 +817,37 @@
                                     "mime_types": ""
                                 },
                                 {
+                                    "key": "field_5aa0128972e1d",
+                                    "label": "Animation",
+                                    "name": "animation",
+                                    "type": "file",
+                                    "instructions": "Must be an MP4 file",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa0122a72e1c",
+                                                "operator": "==",
+                                                "value": "animation"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": "mp4"
+                                },
+                                {
                                     "key": "field_59f32af75c585",
                                     "label": "Caption",
                                     "name": "caption",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -778,11 +865,10 @@
                             ]
                         },
                         {
-                            "key": "field_59f32b015c586",
+                            "key": "field_5aa0131720e13",
                             "label": "Image 2",
                             "name": "image_2",
                             "type": "group",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -794,14 +880,45 @@
                             "layout": "block",
                             "sub_fields": [
                                 {
-                                    "key": "field_59f32b085c587",
-                                    "label": "Image",
-                                    "name": "image",
-                                    "type": "image",
-                                    "value": null,
+                                    "key": "field_5aa0131820e14",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "radio",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "image": "Image",
+                                        "animation": "Animation"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "save_other_choice": 0,
+                                    "default_value": "image",
+                                    "layout": "horizontal",
+                                    "return_format": "value"
+                                },
+                                {
+                                    "key": "field_5aa0131820e15",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa0131820e14",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -819,11 +936,37 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_59f32b125c588",
+                                    "key": "field_5aa0131820e16",
+                                    "label": "Animation",
+                                    "name": "animation",
+                                    "type": "file",
+                                    "instructions": "Must be an MP4 file",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa0131820e14",
+                                                "operator": "==",
+                                                "value": "animation"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": "mp4"
+                                },
+                                {
+                                    "key": "field_5aa0131820e17",
                                     "label": "Caption",
                                     "name": "caption",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -855,7 +998,6 @@
                             "label": "Icons",
                             "name": "icons",
                             "type": "repeater",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -875,7 +1017,6 @@
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -900,7 +1041,6 @@
                                     "label": "Text",
                                     "name": "text",
                                     "type": "text",
-                                    "value": null,
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -959,7 +1099,6 @@
                             "label": "Heading",
                             "name": "heading",
                             "type": "text",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -979,7 +1118,6 @@
                             "label": "Intro text",
                             "name": "intro_text",
                             "type": "wysiwyg",
-                            "value": null,
                             "instructions": "An introductory paragraph. Optional.",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1009,7 +1147,6 @@
                             "label": "Heading",
                             "name": "heading",
                             "type": "text",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1029,7 +1166,6 @@
                             "label": "Introductory text",
                             "name": "introductory_text",
                             "type": "wysiwyg",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1049,7 +1185,6 @@
                             "label": "Team",
                             "name": "team",
                             "type": "taxonomy",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1082,7 +1217,6 @@
                             "label": "Quote",
                             "name": "quote",
                             "type": "wysiwyg",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1102,7 +1236,6 @@
                             "label": "Person",
                             "name": "person",
                             "type": "textarea",
-                            "value": null,
                             "instructions": "Name \/ role \/ organisation of the person being quoted",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1122,7 +1255,6 @@
                             "label": "Button text",
                             "name": "button_text",
                             "type": "text",
-                            "value": null,
                             "instructions": "Optional",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1142,7 +1274,6 @@
                             "label": "Button link",
                             "name": "button_link",
                             "type": "page_link",
-                            "value": null,
                             "instructions": "Optional",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1176,7 +1307,6 @@
                             "label": "Columns",
                             "name": "columns",
                             "type": "select",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1204,7 +1334,6 @@
                             "label": "Column 1",
                             "name": "column_1",
                             "type": "wysiwyg",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1224,7 +1353,6 @@
                             "label": "Column 2",
                             "name": "column_2",
                             "type": "wysiwyg",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -1252,7 +1380,6 @@
                             "label": "Background colour",
                             "name": "background_colour",
                             "type": "select",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1290,7 +1417,6 @@
                             "label": "Video",
                             "name": "video",
                             "type": "oembed",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1306,18 +1432,17 @@
                     "min": "",
                     "max": ""
                 },
-                "59d22a50c1f8e": {
-                    "key": "59d22a50c1f8e",
+                "5aa01ad6c4ba7": {
+                    "key": "5aa01ad6c4ba7",
                     "name": "zoomable_images",
                     "label": "Zoomable images",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_59d22a50c1f8f",
+                            "key": "field_5aa01ad6c4ba8",
                             "label": "Image 1",
                             "name": "image_1",
                             "type": "group",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1329,14 +1454,45 @@
                             "layout": "block",
                             "sub_fields": [
                                 {
-                                    "key": "field_59d22a93c1f91",
-                                    "label": "Image",
-                                    "name": "image",
-                                    "type": "image",
-                                    "value": null,
+                                    "key": "field_5aa01ad6c4ba9",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "radio",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "image": "Image",
+                                        "animation": "Animation"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "save_other_choice": 0,
+                                    "default_value": "image",
+                                    "layout": "horizontal",
+                                    "return_format": "value"
+                                },
+                                {
+                                    "key": "field_5aa01ad6c4baa",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa01ad6c4ba9",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -1354,12 +1510,38 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_59d22a9cc1f92",
-                                    "label": "Caption text",
+                                    "key": "field_5aa01ad6c4bab",
+                                    "label": "Animation",
+                                    "name": "animation",
+                                    "type": "file",
+                                    "instructions": "Must be an MP4 file",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa01ad6c4ba9",
+                                                "operator": "==",
+                                                "value": "animation"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": "mp4"
+                                },
+                                {
+                                    "key": "field_5aa01ad6c4bac",
+                                    "label": "Caption",
                                     "name": "caption",
                                     "type": "text",
-                                    "value": null,
-                                    "instructions": "Optional",
+                                    "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -1376,11 +1558,10 @@
                             ]
                         },
                         {
-                            "key": "field_59d22a50c1f90",
+                            "key": "field_5aa01ad6c4bad",
                             "label": "Image 2",
                             "name": "image_2",
                             "type": "group",
-                            "value": null,
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1392,14 +1573,45 @@
                             "layout": "block",
                             "sub_fields": [
                                 {
-                                    "key": "field_59d22aacc1f93",
-                                    "label": "Image",
-                                    "name": "image",
-                                    "type": "image",
-                                    "value": null,
+                                    "key": "field_5aa01ad6c4bae",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "radio",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "image": "Image",
+                                        "animation": "Animation"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "save_other_choice": 0,
+                                    "default_value": "image",
+                                    "layout": "horizontal",
+                                    "return_format": "value"
+                                },
+                                {
+                                    "key": "field_5aa01ad6c4baf",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa01ad6c4bae",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -1417,12 +1629,38 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_59d22ab5c1f94",
-                                    "label": "Caption text",
+                                    "key": "field_5aa01ad6c4bb0",
+                                    "label": "Animation",
+                                    "name": "animation",
+                                    "type": "file",
+                                    "instructions": "Must be an MP4 file",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa01ad6c4bae",
+                                                "operator": "==",
+                                                "value": "animation"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": "mp4"
+                                },
+                                {
+                                    "key": "field_5aa01ad6c4bb1",
+                                    "label": "Caption",
                                     "name": "caption",
                                     "type": "text",
-                                    "value": null,
-                                    "instructions": "Optional",
+                                    "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -1481,5 +1719,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1509452291
+    "modified": 1520442673
 }

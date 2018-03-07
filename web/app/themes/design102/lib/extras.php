@@ -155,3 +155,16 @@ function substr_with_ellipsis($string, $length, $ellipsis = '…') {
   }
   return $string;
 }
+
+/**
+ * Output a <video> tag that behaves like an animated GIF:
+ *  - muted
+ *  - autoplay
+ *  - looped
+ *
+ * @param $src
+ * @return string
+ */
+function mp4_animation($src) {
+  return '<video src="' . $src . '" muted autoplay loop class="mp4-animation"></video>';
+}
