@@ -5,7 +5,7 @@ use Roots\Sage\Extras;
 ?>
 
 <?php if (!empty($fields['slides'])): ?>
-<div class="hero-carousel-block">
+<div class="hero-carousel-block" data-autoplay="<?= (int) $fields['autoplay'] ?>">
   <?php
 
   if (!empty($fields['heading'])) {

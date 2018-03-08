@@ -80,6 +80,7 @@
   // Hero carousels
   $('.hero-carousel-block').each(function(i, carousel) {
     var slidesContainer = $(carousel).find('.carousel__slides');
+    var autoplay = !!+$(carousel).data('autoplay');
 
     if (slidesContainer.find('> li').length > 1) {
       // Play/pause video in the given slide
@@ -107,7 +108,8 @@
         slidesToScroll: 1,
         arrows: true,
         dots: true,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        autoplay: autoplay
       });
     }
   });
