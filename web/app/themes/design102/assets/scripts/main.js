@@ -82,7 +82,26 @@
     var slidesContainer = $(carousel).find('.carousel__slides');
 
     if (slidesContainer.find('> li').length > 1) {
-      $(carousel).find('.carousel').addClass('carousel--active');
+      // Play/pause video in the given slide
+      var videoInSlide = function(action, slide) {
+        var videos = $(slide).find('video');
+        if (videos.length > 0) {
+          videos.get(0)[action]();
+        }
+      };
+
+      // Play video on carousel init
+      slidesContainer.on('init', function(event, slick) {
+        $(carousel).find('.carousel').addClass('carousel--active');
+        videoInSlide('play', slick.$slides.get(slick.currentSlide));
+      });
+
+      // Play/pause video when changing slides
+      slidesContainer.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        videoInSlide('pause', slick.$slides.get(currentSlide));
+        videoInSlide('play', slick.$slides.get(nextSlide));
+      });
+
       slidesContainer.slick({
         slidesToShow: 1,
         slidesToScroll: 1,

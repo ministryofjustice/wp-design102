@@ -534,17 +534,49 @@
                             "collapsed": "",
                             "min": 0,
                             "max": 0,
-                            "layout": "table",
+                            "layout": "row",
                             "button_label": "",
                             "sub_fields": [
+                                {
+                                    "key": "field_5aa119ff9c36c",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "image": "Image",
+                                        "animation": "Animation"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "save_other_choice": 0,
+                                    "default_value": "image",
+                                    "layout": "horizontal",
+                                    "return_format": "value"
+                                },
                                 {
                                     "key": "field_59b15370b78aa",
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "instructions": "",
+                                    "instructions": "Should be 3x2 ratio – minimum 960x640px",
                                     "required": 0,
-                                    "conditional_logic": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa119ff9c36c",
+                                                "operator": "==",
+                                                "value": "image"
+                                            }
+                                        ]
+                                    ],
                                     "wrapper": {
                                         "width": "",
                                         "class": "",
@@ -560,6 +592,33 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5aa11a229c36d",
+                                    "label": "Animation",
+                                    "name": "animation",
+                                    "type": "file",
+                                    "instructions": "Should be 3x2 ratio – minimum 960x640px<br\/>\r\nMust be an MP4 file",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5aa119ff9c36c",
+                                                "operator": "==",
+                                                "value": "animation"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": "mp4"
                                 },
                                 {
                                     "key": "field_59b15359b78a8",
@@ -662,7 +721,7 @@
                             "label": "Image",
                             "name": "image",
                             "type": "image",
-                            "instructions": "",
+                            "instructions": "Should be 2x1 ratio – minimum 960x480px",
                             "required": 0,
                             "conditional_logic": [
                                 [
@@ -694,7 +753,7 @@
                             "label": "Animation",
                             "name": "animation",
                             "type": "file",
-                            "instructions": "",
+                            "instructions": "Should be 2x1 ratio – minimum 960x480px<br\/>\r\nMust be an MP4 file",
                             "required": 0,
                             "conditional_logic": [
                                 [
@@ -789,7 +848,7 @@
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "instructions": "",
+                                    "instructions": "Should be 4x3 ratio – minimum size 960x720px",
                                     "required": 0,
                                     "conditional_logic": [
                                         [
@@ -821,7 +880,7 @@
                                     "label": "Animation",
                                     "name": "animation",
                                     "type": "file",
-                                    "instructions": "Must be an MP4 file",
+                                    "instructions": "Should be 4x3 ratio – minimum size 960x720px<br\/>\r\nMust be an MP4 file",
                                     "required": 0,
                                     "conditional_logic": [
                                         [
@@ -908,7 +967,7 @@
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "instructions": "",
+                                    "instructions": "Should be 4x3 ratio – minimum size 960x720px",
                                     "required": 0,
                                     "conditional_logic": [
                                         [
@@ -940,7 +999,7 @@
                                     "label": "Animation",
                                     "name": "animation",
                                     "type": "file",
-                                    "instructions": "Must be an MP4 file",
+                                    "instructions": "Should be 4x3 ratio – minimum size 960x720px<br\/>\r\nMust be an MP4 file",
                                     "required": 0,
                                     "conditional_logic": [
                                         [
@@ -1482,7 +1541,7 @@
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "instructions": "",
+                                    "instructions": "Should be 4x3 ratio – minimum size 960x720px",
                                     "required": 0,
                                     "conditional_logic": [
                                         [
@@ -1514,7 +1573,7 @@
                                     "label": "Animation",
                                     "name": "animation",
                                     "type": "file",
-                                    "instructions": "Must be an MP4 file",
+                                    "instructions": "Should be 4x3 ratio – minimum size 960x720px<br\/>\r\nMust be an MP4 file",
                                     "required": 0,
                                     "conditional_logic": [
                                         [
@@ -1601,7 +1660,7 @@
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
-                                    "instructions": "",
+                                    "instructions": "Should be 4x3 ratio – minimum size 960x720px",
                                     "required": 0,
                                     "conditional_logic": [
                                         [
@@ -1633,7 +1692,7 @@
                                     "label": "Animation",
                                     "name": "animation",
                                     "type": "file",
-                                    "instructions": "Must be an MP4 file",
+                                    "instructions": "Should be 4x3 ratio – minimum size 960x720px<br\/>\r\nMust be an MP4 file",
                                     "required": 0,
                                     "conditional_logic": [
                                         [
@@ -1719,5 +1778,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1520442673
+    "modified": 1520519722
 }
