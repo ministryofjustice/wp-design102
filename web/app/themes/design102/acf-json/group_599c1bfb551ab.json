@@ -681,6 +681,25 @@
                                     "multiple": 0
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_5aa14d48516b3",
+                            "label": "Auto-advance slides",
+                            "name": "autoplay",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Automatically advance slides every 3 seconds",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -1778,5 +1797,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1520519722
+    "modified": 1520520772
 }
