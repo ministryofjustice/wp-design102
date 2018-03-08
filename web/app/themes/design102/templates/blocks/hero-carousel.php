@@ -22,16 +22,23 @@ use Roots\Sage\Extras;
           <?php endif; ?>
 
             <div class="card text-white">
-              <?=
-              wp_get_attachment_image(
-                $slide['image']['id'],
-                '3x2_large',
-                false,
-                [
-                  'class' => 'card-img',
-                  'sizes' => '(min-width: 960px) 930px, calc(100vw - 30px)'
-                ]
-              )
+              <?php
+
+              if ($slide['type'] == 'image') {
+                echo wp_get_attachment_image(
+                  $slide['image']['id'],
+                  '3x2_large',
+                  false,
+                  [
+                    'class' => 'card-img',
+                    'sizes' => '(min-width: 960px) 930px, calc(100vw - 30px)'
+                  ]
+                );
+              }
+              else {
+                echo Extras\mp4_animation($slide['animation']['url']);
+              }
+
               ?>
               <?php if (!empty($slide['heading'])): ?>
                 <div class="card-img-overlay-gradient">
