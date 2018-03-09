@@ -1,0 +1,49 @@
+/**
+ * Visually this arrow looks the same as `.carousel .slick-arrow` defined in modules/carousel.
+ * However the styling rules needed to be tweaked to effectively override the default styles
+ * supplied by Magnific Popup.
+ */
+button.mfp-arrow {
+  border: 0;
+  background: rgba($black, 0.7);
+  font-size: 0;
+  line-height: 0;
+  color: $white;
+  padding: 0 0.8rem;
+  border-radius: 0;
+  height: auto;
+  width: auto;
+  opacity: 0.8;
+  @include transition($btn-transition);
+
+  &:after {
+    font-size: 2rem;
+    line-height: 4rem;
+    border: 0;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: 0;
+  }
+
+  &.mfp-arrow-right:after {
+    content: '>';
+  }
+
+  &.mfp-arrow-left:after {
+    content: '<';
+  }
+
+  &:before {
+    display: none;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+    opacity: 1;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
