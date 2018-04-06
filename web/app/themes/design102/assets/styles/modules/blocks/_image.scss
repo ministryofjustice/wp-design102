@@ -33,18 +33,8 @@
     right: 0;
     width: 2rem;
     height: 2rem;
-    background: url('../images/zoom.svg') center center no-repeat;
+    background: url('../images/zoom-icon.svg') center center no-repeat;
     background-size: cover;
     margin: 1rem;
-  }
-
-  .zoomable:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 8rem;
-    height: 8rem;
-    background-image: linear-gradient(135deg, rgba(#000, 0), rgba(#000, 0) 50%, rgba(#000, 1));
   }
 }
