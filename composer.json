@@ -51,7 +51,8 @@
     "acf/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/metronet-reorder-posts": "*",
     "wpackagist-plugin/reorder-by-term": "*",
-    "ministryofjustice/wp-rewrite-media-to-s3": "*"
+    "ministryofjustice/wp-rewrite-media-to-s3": "*",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
