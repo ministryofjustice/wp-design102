@@ -9,7 +9,7 @@
     ?>
     <?= wp_get_attachment_image($photo['ID'], [500, 472]) ?>
     <?php if (!empty($animation)): ?>
-      <video src="<?= $animation['url'] ?>" muted preload="auto"></video>
+      <video src="<?= $animation['url'] ?>" muted playsinline preload="auto"></video>
     <?php endif; ?>
   </div>
 
