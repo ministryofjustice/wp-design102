@@ -166,5 +166,5 @@ function substr_with_ellipsis($string, $length, $ellipsis = '…') {
  * @return string
  */
 function mp4_animation($src) {
-  return '<video src="' . $src . '" muted autoplay loop class="mp4-animation"></video>';
+  return '<video src="' . $src . '" muted autoplay loop playsinline class="mp4-animation"></video>';
 }
