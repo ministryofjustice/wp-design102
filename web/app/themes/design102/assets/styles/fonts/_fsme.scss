@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'fsme';
-  src: url('../fonts/fsme-regular-webfont.woff2') format('woff2'),
-  url('../fonts/fsme-medium-webfont.woff') format('woff');
+  src: url('/app/uploads/fsme/Fonts/Web/FSMeWeb-Regular/FSMeWeb-Regular.woff2') format('woff2'),
+  url('/app/uploads/fsme/Fonts/Web/FSMeWeb-Regular/FSMeWeb-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'fsme';
-  src: url('../fonts/fsme-bold-webfont.woff2') format('woff2'),
-  url('../fonts/fsme-bold-webfont.woff') format('woff');
+  src: url('/app/uploads/fsme/Fonts/Web/FSMeWeb-Bold/FSMeWeb-Bold.woff2') format('woff2'),
+  url('/app/uploads/fsme/Fonts/Web/FSMeWeb-Bold/FSMeWeb-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
