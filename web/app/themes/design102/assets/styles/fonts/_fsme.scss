@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'fsme';
-  src: url('/app/uploads/fsme/Fonts/Web/FSMeWeb-Regular/FSMeWeb-Regular.woff2') format('woff2'),
-  url('/app/uploads/fsme/Fonts/Web/FSMeWeb-Regular/FSMeWeb-Regular.woff') format('woff');
+  src: url('https://s3.eu-west-2.amazonaws.com/mojd-public-assets/FSMeWeb-Regular/FSMeWeb-Regular.woff2') format('woff2'),
+  url('https://s3.eu-west-2.amazonaws.com/mojd-public-assets/FSMeWeb-Regular/FSMeWeb-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'fsme';
-  src: url('/app/uploads/fsme/Fonts/Web/FSMeWeb-Bold/FSMeWeb-Bold.woff2') format('woff2'),
-  url('/app/uploads/fsme/Fonts/Web/FSMeWeb-Bold/FSMeWeb-Bold.woff') format('woff');
+  src: url('https://s3.eu-west-2.amazonaws.com/mojd-public-assets/FSMeWeb-Bold/FSMeWeb-Bold.woff2') format('woff2'),
+  url('https://s3.eu-west-2.amazonaws.com/mojd-public-assets/FSMeWeb-Bold/FSMeWeb-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
