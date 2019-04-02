@@ -9,7 +9,7 @@
   flex-wrap: nowrap;
   align-items: center;
   width: 100%;
-  @include transition($btn-transition);
+  @include transition($all-transition);
 
   &, &:hover, &:active {
     text-decoration: none;

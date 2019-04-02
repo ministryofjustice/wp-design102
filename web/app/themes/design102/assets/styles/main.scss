@@ -1,14 +1,12 @@
 @import "common/variables";
 
-// Automatically injected Bower dependencies via wiredep (never manually edit this block)
-// bower:scss
-@import "../../bower_components/bootstrap/scss/bootstrap.scss";
-@import "../../bower_components/slick-carousel/slick/slick.scss";
-// endbower
-
-//@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"; // Full-fat bootstrap
+@import "../../node_modules/slick-carousel/slick/slick.scss"; // Slick
+@import "../../node_modules/magnific-popup/src/css/main.scss"; // Magnific Popup
 
 @import "fonts/fsme";
+
+@import "patch";
 
 @import "common/global";
 @import "common/type";

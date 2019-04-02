@@ -11,7 +11,7 @@
   max-height: 100%;
   background-color: transparent;
   @include gradient-y(rgba(#000, 0), rgba(#000, 1));
-  @include transition($btn-transition);
+  @include transition($all-transition);
 
   @media (min-width: 330px) {
     padding: ($card-img-overlay-padding*2) $card-img-overlay-padding $card-img-overlay-padding $card-img-overlay-padding;

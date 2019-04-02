@@ -3,7 +3,7 @@
  */
 .navbar-light {
   background-color: rgba($white, 0.95);
-  @include transition($btn-transition);
+  @include transition($all-transition);
 
   $shadow-on:  0 3px 10px rgba($black, 0.25);
   $shadow-off: 0 0 0 rgba($black, 0);

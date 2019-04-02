@@ -33,7 +33,7 @@
       border-radius: 50%;
       padding: 0;
       margin: 0;
-      @include transition($btn-transition);
+      @include transition($all-transition);
     }
 
     .slick-active button {
@@ -54,7 +54,7 @@
     padding: 0 0.8rem;
     margin-top: -2rem;
     border-radius: 0;
-    @include transition($btn-transition);
+    @include transition($all-transition);
 
     @include media-breakpoint-up(sm) {
       z-index: 2;
@@ -121,7 +121,7 @@
     padding: 15% 2rem 2rem 2rem;
     color: $white;
     @include gradient-y(rgba(#000, 0), rgba(#000, 1));
-    @include transition($btn-transition);
+    @include transition($all-transition);
 
     h1 {
       font-size: $h2-font-size;

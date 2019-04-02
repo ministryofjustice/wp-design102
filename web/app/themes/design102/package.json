@@ -1,58 +1,51 @@
 {
-  "name": "sage",
-  "version": "8.5.1",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/roots/sage.git"
-  },
-  "bugs": {
-    "url": "https://github.com/roots/sage/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
+    "name": "sage",
+    "version": "8.3.0",
+    "author": "Ben Word <ben@benword.com>",
+    "homepage": "https://roots.io/sage/",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/roots/sage.git"
+    },
+    "bugs": {
+        "url": "https://github.com/roots/sage/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "details-element-polyfill": "^2.0.1",
+        "jquery": "^3.3.1",
+        "magnific-popup": "^1.1.0",
+        "popper.js": "^1.14.7",
+        "slick-carousel": "^1.8.1",
+        "throttle-debounce": "^2.1.0"
+    },
+    "devDependencies": {
+        "acorn": "^6.1.1",
+        "ajv": "^6.10.0",
+        "browser-sync": "^2.26.3",
+        "browser-sync-webpack-plugin": "^2.0.1",
+        "cross-env": "^5.2.0",
+        "imagemin": "^6.1.0",
+        "laravel-mix": "^4.0.15",
+        "node-sass": "^4.11.0",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.17.2",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.5.16",
+        "url-search-params-polyfill": "^4.0.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     }
-  ],
-  "scripts": {
-    "build": "bower install && gulp --production",
-    "jshint": "gulp jshint",
-    "jscs": "jscs gulpfile.js assets/scripts/*.js"
-  },
-  "engines": {
-    "node": ">= 4.5"
-  },
-  "devDependencies": {
-    "asset-builder": "^1.1.0",
-    "browser-sync": "^2.8.2",
-    "del": "^2.2.2",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-changed": "^1.3.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssnano": "^2.1.0",
-    "gulp-flatten": "0.3.1",
-    "gulp-if": "^2.0.1",
-    "gulp-imagemin": "^3.0.3",
-    "gulp-jshint": "^2.0.1",
-    "gulp-less": "^3.0.3",
-    "gulp-plumber": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-rev": "^7.1.2",
-    "gulp-sass": "^2.0.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^2.0.0",
-    "imagemin-pngcrush": "^5.0.0",
-    "jshint": "^2.9.3",
-    "jshint-stylish": "^2.0.1",
-    "lazypipe": "^1.0.1",
-    "merge-stream": "^1.0.0",
-    "minimist": "^1.1.3",
-    "run-sequence": "^1.1.2",
-    "traverse": "^0.6.6",
-    "wiredep": "^4.0.0"
-  }
 }
