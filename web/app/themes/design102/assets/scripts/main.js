@@ -158,7 +158,7 @@ import { throttle } from 'throttle-debounce';
             var mouseover = function () {
                 resetVideo();
                 $(video).addClass('show');
-                video.play();
+                video.play().catch(function() {});
             };
 
             var mouseout = function () {
