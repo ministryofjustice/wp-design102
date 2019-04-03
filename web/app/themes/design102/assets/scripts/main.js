@@ -10,10 +10,9 @@
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
 
-import { throttle } from 'throttle-debounce';
+import {throttle} from 'throttle-debounce';
 
 (function ($) {
-
     // Use this variable to set up the common and page specific functions. If you
     // rename this variable, you will also need to rename the namespace below.
     var Sage = {
@@ -158,7 +157,8 @@ import { throttle } from 'throttle-debounce';
             var mouseover = function () {
                 resetVideo();
                 $(video).addClass('show');
-                video.play().catch(function() {});
+                video.play().catch(function () {
+                });
             };
 
             var mouseout = function () {
