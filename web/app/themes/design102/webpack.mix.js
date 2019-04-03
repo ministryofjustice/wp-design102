@@ -11,7 +11,6 @@ mix_.js('assets/scripts/main.js', 'js/main.min.js')
         'assets/scripts/wp-admin.js'
     ], 'js/wp-admin.js')
     .sass('assets/styles/main.scss', 'css/main.min.css').options({processCssUrls: false})
-    .copy('assets/fonts/*', 'dist/fonts/')
     .copy('assets/images/*.{jpg,jpeg,png,gif,svg,ico}', 'dist/images/')
     .copy('assets/images/static/*.{jpg,jpeg,png,gif,svg,ico}', 'dist/images/static/');
 

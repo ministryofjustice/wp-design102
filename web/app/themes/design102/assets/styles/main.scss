@@ -1,10 +1,9 @@
-@import "common/variables";
+@import "common/_variables";
+@import "fonts/fsme";
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"; // Full-fat bootstrap
 @import "../../node_modules/slick-carousel/slick/slick.scss"; // Slick
 @import "../../node_modules/magnific-popup/src/css/main.scss"; // Magnific Popup
-
-@import "fonts/fsme";
 
 @import "patch";
 

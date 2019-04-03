@@ -6,7 +6,7 @@ $main-sm-columns: 12;
 $sidebar-sm-columns: 4;
 
 // Fonts
-$font-family-sans-serif: "fsme", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: fsme, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 
 //$font-size-base: 1.25rem; // 20px, assuming a browser default of 16px
 //$font-size-lg:   1.5rem; // 24px
