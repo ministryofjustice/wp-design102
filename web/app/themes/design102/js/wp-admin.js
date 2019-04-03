@@ -1,3 +1,12 @@
+(function($) {
+  // Site title
+  wp.customize('blogname', function(value) {
+    value.bind(function(to) {
+      $('.brand').text(to);
+    });
+  });
+})(jQuery);
+
 (function ($) {
 
     /**
@@ -31,7 +40,7 @@
         });
     } else {
         if (console && console.log) {
-            console.log("The object 'acf' is not available");
+            console.log("The object 'acf' does not exist in dist/js/wp-admin.js");
         }
     }
 
