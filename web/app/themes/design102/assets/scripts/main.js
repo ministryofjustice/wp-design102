@@ -79,7 +79,7 @@ import {throttle} from 'throttle-debounce';
     $('.hero-carousel-block').each(function (i, carousel) {
         var slidesContainer = $(carousel).find('.carousel__slides');
         // `!!+` used below to convert "1"/"0" into boolean
-        var autoplay = !!+$(carousel).data('autoplay'); // jshint ignore:line
+        var autoplay = !! + $(carousel).data('autoplay'); // jshint ignore:line
 
         if (slidesContainer.find('> li').length > 1) {
             // Play/pause video in the given slide
