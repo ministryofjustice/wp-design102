@@ -190,3 +190,4 @@ import {throttle} from 'throttle-debounce';
     });
 
 })(jQuery);
+
