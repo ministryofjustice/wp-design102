@@ -20,26 +20,25 @@
     "dependencies": {
         "bootstrap": "^4.3.1",
         "details-element-polyfill": "^2.0.1",
-        "jquery": "^3.3.1",
+        "jquery": "^3.4.1",
         "magnific-popup": "^1.1.0",
-        "popper.js": "^1.14.7",
+        "popper.js": "^1.15.0",
         "slick-carousel": "^1.8.1",
         "throttle-debounce": "^2.1.0"
     },
     "devDependencies": {
         "acorn": "^6.1.1",
         "ajv": "^6.10.0",
-        "browser-sync": "^2.26.3",
+        "browser-sync": "^2.26.5",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^5.2.0",
         "imagemin": "^6.1.0",
         "laravel-mix": "^4.0.15",
-        "node-sass": "^4.11.0",
         "resolve-url-loader": "^2.3.1",
-        "sass": "^1.17.2",
+        "sass": "^1.19.0",
         "sass-loader": "^7.1.0",
-        "vue-template-compiler": "^2.5.16",
-        "url-search-params-polyfill": "^4.0.0"
+        "url-search-params-polyfill": "^4.0.0",
+        "vue-template-compiler": "^2.5.16"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",

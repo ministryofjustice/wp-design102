@@ -1,84 +1,103 @@
 {
-  "name": "roots/bedrock",
-  "type": "project",
-  "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
-  "authors": [
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    }
-  ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
-  "config": {
-    "preferred-install": "dist"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
-      "type": "composer",
-      "url": "https://composer.wp.dsd.io"
-    },
-    {
-      "type": "composer",
-      "url": "https://wp-languages.github.io"
-    }
-  ],
-  "require": {
-    "php": ">=5.6",
-    "composer/installers": "~1.2.0",
-    "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "*",
-    "koodimonni-language/core-en_gb": "*",
-    "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "*",
-    "acf/advanced-custom-fields-pro": "*",
-    "wpackagist-plugin/metronet-reorder-posts": "*",
-    "wpackagist-plugin/reorder-by-term": "*",
-    "ministryofjustice/wp-rewrite-media-to-s3": "*",
-    "wpackagist-plugin/google-analytics-dashboard-for-wp": "*"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^2.5.1"
-  },
-  "extra": {
-    "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
-    },
-    "dropin-paths": {
-      "web/app/languages/": ["vendor:koodimonni-language"],
-      "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
-      "web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
-    },
-    "wordpress-install-dir": "web/wp"
-  },
-  "scripts": {
-    "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
+    "name": "roots/bedrock",
+    "type": "project",
+    "license": "MIT",
+    "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+    "homepage": "https://roots.io/bedrock/",
+    "authors": [
+        {
+            "name": "Scott Walkinshaw",
+            "email": "scott.walkinshaw@gmail.com",
+            "homepage": "https://github.com/swalkinshaw"
+        },
+        {
+            "name": "Ben Word",
+            "email": "ben@benword.com",
+            "homepage": "https://github.com/retlehs"
+        }
     ],
-    "test": [
-      "vendor/bin/phpcs -n -s --extensions=php"
+    "keywords": [
+        "bedrock",
+        "roots",
+        "wordpress",
+        "stack",
+        "composer",
+        "vagrant",
+        "wp"
     ],
-    "phpcbf": [
-      "vendor/bin/phpcbf -n --extensions=php"
-    ]
-  }
+    "support": {
+        "issues": "https://github.com/roots/bedrock/issues",
+        "forum": "https://discourse.roots.io/category/bedrock"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.wp.dsd.io"
+        },
+        {
+            "type": "composer",
+            "url": "https://wp-languages.github.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "composer/installers": "~1.2.0",
+        "vlucas/phpdotenv": "^2.0.1",
+        "johnpbloch/wordpress": "*",
+        "koodimonni-language/core-en_gb": "*",
+        "oscarotero/env": "^1.0",
+        "roots/wp-password-bcrypt": "*",
+        "acf/advanced-custom-fields-pro": "*",
+        "wpackagist-plugin/metronet-reorder-posts": "*",
+        "wpackagist-plugin/reorder-by-term": "*",
+        "ministryofjustice/wp-rewrite-media-to-s3": "*",
+        "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
+        "wpackagist-plugin/fast-user-switching": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.5.1"
+    },
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "web/app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "web/app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "dropin-paths": {
+            "web/app/languages/": [
+                "vendor:koodimonni-language"
+            ],
+            "web/app/languages/plugins/": [
+                "vendor:koodimonni-plugin-language"
+            ],
+            "web/app/languages/themes/": [
+                "vendor:koodimonni-theme-language"
+            ]
+        },
+        "wordpress-install-dir": "web/wp"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "test": [
+            "vendor/bin/phpcs -n -s --extensions=php"
+        ],
+        "phpcbf": [
+            "vendor/bin/phpcbf -n --extensions=php"
+        ]
+    }
 }
