@@ -101,6 +101,10 @@ function assets()
     wp_enqueue_script('jquery', get_template_directory_uri() . $assets['jquery'], []);
     wp_enqueue_script('slick', get_template_directory_uri() . $assets['slick'], ['jquery'], null, true);
     wp_enqueue_script('magnific', get_template_directory_uri() . $assets['magnific'], ['jquery'], null, true);
+
+    wp_deregister_script('jquery-migrate');
+    wp_enqueue_script('jquery-migrate', '//code.jquery.com/jquery-migrate-3.0.1.min.js', ['jquery'], '3.0.1', false);
+
     wp_enqueue_script(
         'sage/js',
         get_template_directory_uri() . $assets['js'],
