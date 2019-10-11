@@ -122,7 +122,7 @@ function assets()
     );
 }
 
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 10);
 
 function admin_assets()
 {
