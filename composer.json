@@ -59,6 +59,8 @@
         "wpackagist-plugin/reorder-by-term": "*",
         "ministryofjustice/wp-rewrite-media-to-s3": "*",
         "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
+        "ministryofjustice/cookie-compliance-for-wordpress": "*",
+        "ministryofjustice/wp-moj-components": "*",
         "wpackagist-plugin/fast-user-switching": "*"
     },
     "require-dev": {
