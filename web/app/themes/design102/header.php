@@ -2,7 +2,7 @@
 
 use Roots\Sage\Extras;
 
-get_header();
+get_template_part('head');
 ?>
 <nav class="navbar navbar-expand-md fixed-top navbar-light">
     <div class="l-page-container">

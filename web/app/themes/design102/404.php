@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="l-blocks">
     <br>
     <div class="alert alert-warning">
