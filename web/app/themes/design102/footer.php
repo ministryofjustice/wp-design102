@@ -39,3 +39,6 @@ wp_footer();
         </div>
     </div>
 </footer>
+</body>
+</html>
+
