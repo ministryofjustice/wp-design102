@@ -50,8 +50,8 @@
         "php": ">=5.6",
         "composer/installers": "~1.2.0",
         "vlucas/phpdotenv": "^2.0.1",
-        "johnpbloch/wordpress": "*",
-        "koodimonni-language/core-en_gb": "*",
+        "johnpbloch/wordpress": "5.2.4",
+        "koodimonni-language/core-en_gb": "5.2.4",
         "oscarotero/env": "^1.0",
         "roots/wp-password-bcrypt": "*",
         "acf/advanced-custom-fields-pro": "*",
@@ -59,7 +59,10 @@
         "wpackagist-plugin/reorder-by-term": "*",
         "ministryofjustice/wp-rewrite-media-to-s3": "*",
         "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
-        "wpackagist-plugin/fast-user-switching": "*"
+        "wpackagist-plugin/fast-user-switching": "*",
+        "ministryofjustice/wp-user-roles": "*",
+        "ministryofjustice/cookie-compliance-for-wordpress": "*",
+        "ministryofjustice/wp-moj-components": "*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.5.1"
@@ -67,7 +70,8 @@
     "extra": {
         "installer-paths": {
             "web/app/mu-plugins/{$name}/": [
-                "type:wordpress-muplugin"
+                "type:wordpress-muplugin",
+                "ministryofjustice/wp-user-roles"
             ],
             "web/app/plugins/{$name}/": [
                 "type:wordpress-plugin"

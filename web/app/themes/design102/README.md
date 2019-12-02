@@ -1,124 +1,151 @@
-# [Sage](https://roots.io/sage/)
-[![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
-[![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
+# DESIGN102
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
-
-* Source: [https://github.com/roots/sage](https://github.com/roots/sage)
-* Homepage: [https://roots.io/sage/](https://roots.io/sage/)
-* Documentation: [https://roots.io/sage/docs/](https://roots.io/sage/docs/)
-* Twitter: [@rootswp](https://twitter.com/rootswp)
-* Newsletter: [Subscribe](http://roots.io/subscribe/)
-* Forum: [https://discourse.roots.io/](https://discourse.roots.io/)
-
-## Requirements
-
-| Prerequisite    | How to check | How to install
-| --------------- | ------------ | ------------- |
-| PHP >= 5.4.x    | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
-| Node.js >= 4.5  | `node -v`    | [nodejs.org](http://nodejs.org/) |
-| gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
-| Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
-
-For more installation notes, refer to the [Install gulp and Bower](#install-gulp-and-bower) section in this document.
+Wordpress theme.
 
 ## Features
 
-* [gulp](http://gulpjs.com/) build script that compiles both Sass and Less, checks for JavaScript errors, optimizes images, and concatenates and minifies files
-* [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
-* [Bower](http://bower.io/) for front-end package management
-* [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
-* [Bootstrap](http://getbootstrap.com/)
-* [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
-* ARIA roles and microformats
-* Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
-* [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
+- Dependency management with [Composer](https://getcomposer.org)
+- Enhanced password hashing using bcrypt
+- Builds into a docker image
+- Docker-compose is used to run as a local development server
 
-Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
+## Requirements
 
-* Cleaner output of `wp_head` and enqueued assets
-* Cleaner HTML output of navigation menus
-* Root relative URLs
-* Nice search (`/search/query/`)
-* Google CDN jQuery snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
-* Google Analytics snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
+- PHP >= 7.1
+- Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+- Docker & docker-compose - [Install](https://www.docker.com/docker-mac)
+- Dory (docker proxy for local development) - [Install](https://github.com/FreedomBen/dory)
 
-See a complete working example in the [roots-example-project.com repo](https://github.com/roots/roots-example-project.com).
+## Getting Started
 
-## Theme installation
+1. Clone this repo to your local machine. Since you'll be using this as a starter for your project, you'll want to delete the `.git` directory.
+    ```bash
+    git clone git@github.com:ministryofjustice/wp-design102.git .
+    rm -rf .git
+    ```
 
-Install Sage by copying the project into a new folder within your WordPress themes directory.
+2. Create a `.env` file by copying from `.env.example`:
+    ```bash
+    cp .env.example .env
+    ```
 
-Make sure [Composer](https://getcomposer.org/download/) has been installed before moving on.
+    Set the `SERVER_NAME` variable to `design102.docker`. This is the hostname that will be used for development on your local machine.
 
-Install Sage using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
+3. Build the project locally. This will install composer dependencies on your local filesystem.
+    ```bash
+    make build
+    ```
 
-```shell
-# @ example.com/site/web/app/themes/
-$ composer create-project roots/sage your-theme-name 8.5.1
+    If you experience any errors at this point, it may be due to being unable to access the private composer repository. [More details here](#private-composer-repository).
+
+4. Start the dory proxy, if it's not already running.
+    ```bash
+    dory up
+    ```
+
+    If you get an error message when trying to start dory, make sure you have docker running.
+
+5. Build and run the docker image.
+    ```bash
+    make run
+    ```
+
+6. Once the docker image has built and is running, you should be able to access the running container by going to `http://design102.docker/` using your web browser.
+
+    You will need to run through the WordPress installation wizard in your browser.
+
+    The WordPress admin area will be accessible at `http://design102.docker/wp/wp-admin`.
+
+## Composer + WordPress plugins
+
+The installation of WordPress core and plugins is managed by composer.
+
+See `composer.json` for the required packages.
+
+Plugins in the [WordPress plugin repository](https://wordpress.org/plugins/) are available from [WordPress Packagist](https://wpackagist.org/) (wpackagist).
+
+Premium and custom plugins used by MOJ are available in the private composer repository [composer.wp.dsd.io](https://composer.wp.dsd.io).
+
+### WordPress Packagist plugins
+
+Wpackagist plugins are named by their slug on the WordPress plugin repository, prefixed with the vendor `wpackagist-plugin`.
+
+Some examples:
+```
+| Plugin name | WordPress plugin URL                         | URL slug      | package name                      |
+| ----------- | -------------------------------------------- | ------------- | --------------------------------- |
+| Akismet     | https://wordpress.org/plugins/akismet/       | akismet       | wpackagist-plugin/akismet         |
+| Hello Dolly | https://wordpress.org/plugins/hello-dolly/   | hello-dolly   | wpackagist-plugin/hello-dolly     |
+| Yoast SEO   | https://wordpress.org/plugins/wordpress-seo/ | wordpress-seo | wpackagist-plugin/wordpress-seo   |
 ```
 
-## Theme setup
+#### Example: Installing Akismet plugin
 
-Edit `lib/setup.php` to enable or disable theme features, setup navigation menus, post thumbnail sizes, post formats, and sidebars.
+Run the following command:
 
-## Theme development
-
-Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
-
-### Install gulp and Bower
-
-Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
-
-From the command line:
-
-1. Install [gulp](http://gulpjs.com) and [Bower](http://bower.io/) globally with `npm install -g gulp bower`
-2. Navigate to the theme directory, then run `npm install`
-3. Run `bower install`
-
-You now have all the necessary dependencies to run the build process.
-
-### Available gulp commands
-
-* `gulp` — Compile and optimize the files in your assets directory
-* `gulp watch` — Compile assets when file changes are made
-* `gulp --production` — Compile assets for production (no source maps).
-
-### Using BrowserSync
-
-To use BrowserSync during `gulp watch` you need to update `devUrl` at the bottom of `assets/manifest.json` to reflect your local development hostname.
-
-For example, if your local development URL is `http://project-name.dev` you would update the file to read:
-```json
-...
-  "config": {
-    "devUrl": "http://project-name.dev"
-  }
-...
 ```
-If your local development URL looks like `http://localhost:8888/project-name/` you would update the file to read:
-```json
-...
-  "config": {
-    "devUrl": "http://localhost:8888/project-name/"
-  }
-...
+composer require "wpackagist-plugin/akismet" "*"
 ```
 
-## Documentation
+This will install the latest version of [Akismet](https://wordpress.org/plugins/akismet/) using the corresponding [wpackagist package](https://wpackagist.org/search?q=akismet).
 
-Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
+### Private composer repository
 
-## Contributing
+The private composer repository [composer.wp.dsd.io](https://composer.wp.dsd.io) contains premium and custom WordPress plugins.
 
-Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
+Access to this repository is restricted. Refer to internal documentation for further details.
 
-## Community
+### Building theme assets
 
-Keep track of development and community news.
+Theme assets can be built as part of the docker image. Add required commands to `bin/build.sh`.
 
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
-* Listen to the [Roots Radio podcast](https://roots.io/podcast/)
+### Configure the default theme
+
+Set your theme as the default by adding the following line to `config/application.php`:
+
+```php
+define('WP_DEFAULT_THEME', 'yourthemename');
+```
+
+## WP-CLI
+
+The [WordPress CLI](https://wp-cli.org/) is a useful tool for running commands against your WordPress installation.
+
+To use WP-CLI, your docker container must already be running. (This will probably be running in a separate terminal session/tab.)
+
+1. Run:
+    ```bash
+    make bash
+    ```
+
+    A bash session will be opened in the running container.
+
+2. The WP-CLI will be available as `wp`.
+
+    For example, to list all users in the install:
+    ```bash
+    wp user list
+    ```
+
+## Email delivery
+
+When running locally for development, emails sent by WordPress are not delivered. Instead they are captured by [mailcatcher](https://mailcatcher.me/).
+
+To see emails, go to http://mail.design102.docker/ in your browser.
+e.g. http://mail.example.docker
+
+This will load a webmail-like interface and display all emails that WordPress has sent.
+
+## Make commands
+
+There are several `make` commands configured in the `Makefile`. These are mostly just convenience wrappers for longer or more complicated commands.
+```
+| Command      | Descrption                                                                                                                                                                                           |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `make build` | Run the build script to install application dependencies and build theme assets. This will typically involve installing composer packages and compiling SASS stylesheets.                            |
+| `make clean` | Alias of `git clean -xdf`. Restore the git working copy to its original state. This will remove uncommitted changes and ignored files.                                                               |
+| `make run`   | Alias of `docker-compose up`. Launch the application locally using `docker-compose`.                                                                                                                 |
+| `make bash`  | Open a bash shell on the WordPress docker container. The [WP-CLI](https://wp-cli.org/) is accessible as `wp`. The application must already be running (e.g. via `make run`) before this can be used. |
+| `make test`  | Run tests on the application. Out of the box this will run PHP CodeSniffer (code linter).                                                                                                            |
+```
+

@@ -6,7 +6,7 @@ use Roots\Sage\Wrapper;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-  <?php get_template_part('templates/head'); ?>
+  <?php get_header(); ?>
   <body <?php body_class(); ?>>
     <a class="skip-main" href="#content">Skip to content</a>
     <!--[if IE]>
@@ -16,7 +16,7 @@ use Roots\Sage\Wrapper;
     <![endif]-->
     <?php
       do_action('get_header');
-      get_template_part('templates/header');
+      get_header();
     ?>
     <div id="content" class="l-page-container" role="document">
         <?php
@@ -27,8 +27,7 @@ use Roots\Sage\Wrapper;
     </div>
     <?php
       do_action('get_footer');
-      get_template_part('templates/footer');
-      wp_footer();
+      get_footer();
     ?>
   </body>
 </html>

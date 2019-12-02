@@ -1,7 +1,7 @@
 <?php
 
 use Roots\Sage\Extras;
-
+wp_footer();
 ?>
 
 <footer class="site-footer">

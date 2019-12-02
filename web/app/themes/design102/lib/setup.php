@@ -89,7 +89,8 @@ function assets()
         'js' => '/dist/' . $assets['/js/main.min.js'],
         'jquery' => '/dist/' . $assets['/js/jquery.min.js'],
         'slick' => '/dist/' . $assets['/js/slick.min.js'],
-        'magnific' => '/dist/' . $assets['/js/jquery.magnific-popup.js']
+        'magnific' => '/dist/' . $assets['/js/jquery.magnific-popup.js'],
+        'bootstrap' => '/dist/' . $assets['/js/bootstrap.bundle.min.js']
     );
 
     wp_enqueue_style('sage/css', get_template_directory_uri() . $assets['css'], false, null);
@@ -106,6 +107,7 @@ function assets()
 
     wp_enqueue_script('slick', get_template_directory_uri() . $assets['slick'], ['jquery'], null, true);
     wp_enqueue_script('magnific', get_template_directory_uri() . $assets['magnific'], ['jquery'], null, true);
+    wp_enqueue_script('bootstrap', get_template_directory_uri() . $assets['bootstrap'], ['jquery'], null, true);
 
     wp_enqueue_script(
         'sage/js',
@@ -120,7 +122,7 @@ function assets()
     );
 }
 
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 10);
 
 function admin_assets()
 {
