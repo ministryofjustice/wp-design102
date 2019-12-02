@@ -185,6 +185,7 @@ import {throttle} from 'throttle-debounce';
             if ($content.not(':visible')) {
                 $content.slideDown();
                 $trigger.slideUp();
+                $( ".expandable__content" ).find('.team-member').first().focus();
             }
         });
     });
