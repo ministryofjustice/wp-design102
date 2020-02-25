@@ -8,6 +8,7 @@
 *.sql
 
 # Application
+web/.well-known/security.txt
 web/app/languages
 web/app/plugins/*
 web/app/mu-plugins/wp-*
