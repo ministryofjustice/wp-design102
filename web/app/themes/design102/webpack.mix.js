@@ -2,7 +2,11 @@ const mix_ = require('laravel-mix');
 
 mix_.setPublicPath('./dist/');
 
-mix_.js('assets/scripts/main.js', 'js/main.min.js')
+mix_.js(
+    [
+        'assets/scripts/main.js',
+        'assets/scripts/moj-gtm.js'
+    ], 'js/main.min.js')
     .copy('./node_modules/jquery/dist/jquery.min.js', 'dist/js/')
     .copy('./node_modules/slick-carousel/slick/slick.min.js', 'dist/js/')
     .copy('./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 'dist/js/') // bundle includes popper
