@@ -58,7 +58,6 @@
         "wpackagist-plugin/metronet-reorder-posts": "*",
         "wpackagist-plugin/reorder-by-term": "*",
         "ministryofjustice/wp-rewrite-media-to-s3": "*",
-        "wpackagist-plugin/user-switching": "*",
         "ministryofjustice/wp-user-roles": "*",
         "ministryofjustice/cookie-compliance-for-wordpress": "*",
         "ministryofjustice/wp-moj-components": "*",
