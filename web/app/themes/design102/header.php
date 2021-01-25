@@ -12,6 +12,19 @@ use Roots\Sage\Extras;
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
+<?php
+if ( ! function_exists( 'wp_body_open' ) ) {
+	/**
+	 * Open the body tag, pull in any hooked triggers.
+	 **/
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
+}
+wp_body_open();
+?>
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFVJSWN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
