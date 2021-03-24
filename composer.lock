@@ -355,17 +355,17 @@
         },
         {
             "name": "ministryofjustice/cookie-compliance-for-wordpress",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress.git",
-                "reference": "fca6be4a6871ee81afed74fc04546b122fd71414"
+                "reference": "519e995e3204b18cfeafa79c20fd398a567d55bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/cookie-compliance-for-wordpress/ministryofjustice-cookie-compliance-for-wordpress-fca6be4a6871ee81afed74fc04546b122fd71414-zip-534603.zip",
-                "reference": "fca6be4a6871ee81afed74fc04546b122fd71414",
-                "shasum": "2a31a83f25841a3f00d064a400f4bc2bca89eada"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/cookie-compliance-for-wordpress/ministryofjustice-cookie-compliance-for-wordpress-519e995e3204b18cfeafa79c20fd398a567d55bf-zip-941da1.zip",
+                "reference": "519e995e3204b18cfeafa79c20fd398a567d55bf",
+                "shasum": "59feca2467ac7a67e7c74bb916cc98e8d3c534ff"
             },
             "require-dev": {
                 "composer/composer": "*",
@@ -388,10 +388,10 @@
             ],
             "description": "WP plugin that presents visitor with a cookie consent banner and opt-in setting page.",
             "support": {
-                "source": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/tree/2.0.5",
+                "source": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/tree/2.0.6",
                 "issues": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/issues"
             },
-            "time": "2021-03-23T12:17:18+00:00"
+            "time": "2021-03-24T11:20:24+00:00"
         },
         {
             "name": "ministryofjustice/wp-moj-components",
