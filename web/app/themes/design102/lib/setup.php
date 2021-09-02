@@ -318,4 +318,4 @@ add_filter('nav_menu_css_class', __NAMESPACE__ . '\\menu_item_classes', 10, 3);
 /**
  * Define user roles
  */
-new MOJ_User_Roles();
+//new MOJ_User_Roles();

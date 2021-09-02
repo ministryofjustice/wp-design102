@@ -13,7 +13,6 @@ $sage_includes = [
   'lib/custom-post-types/case-study.php', // CPT: Case Study
   'lib/custom-post-types/team-member.php', // CPT: Team Member
   'lib/custom-post-types/job-vacancy.php', // CPT: Job Vacancy
-  'lib/moj-user-roles.php', // MOJ_User_Roles class
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
   'lib/setup.php',     // Theme setup
