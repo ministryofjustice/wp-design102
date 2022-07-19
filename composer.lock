@@ -12,7 +12,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.12.2.zip",
-                "shasum": "6390ee580de3d18ed1c4f194155770e6c9aaed6f"
+                "shasum": "3a9b12d1a4392a6a806b5b6befb3a551578a4222"
             },
             "type": "wordpress-plugin"
         },
@@ -169,20 +169,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "6.0.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "2432ce687e68c3df7de16920d467761b241e20cf"
+                "reference": "185dfc9f49aa48efb4f345a042e78e5003d9b6a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2432ce687e68c3df7de16920d467761b241e20cf",
-                "reference": "2432ce687e68c3df7de16920d467761b241e20cf",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/185dfc9f49aa48efb4f345a042e78e5003d9b6a2",
+                "reference": "185dfc9f49aa48efb4f345a042e78e5003d9b6a2",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "6.0.0",
+                "johnpbloch/wordpress-core": "6.0.1",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -211,20 +211,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2022-05-24T19:10:15+00:00"
+            "time": "2022-07-12T16:22:03+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.0.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "90d8de3a682f2ed93ebe8cf99bec8fb297d43967"
+                "reference": "163eec26760f7d2cac040e04f00ce548cd303eb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/90d8de3a682f2ed93ebe8cf99bec8fb297d43967",
-                "reference": "90d8de3a682f2ed93ebe8cf99bec8fb297d43967",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/163eec26760f7d2cac040e04f00ce548cd303eb1",
+                "reference": "163eec26760f7d2cac040e04f00ce548cd303eb1",
                 "shasum": ""
             },
             "require": {
@@ -232,7 +232,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "6.0.0"
+                "wordpress/core-implementation": "6.0.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -259,7 +259,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2022-05-24T19:10:11+00:00"
+            "time": "2022-07-12T16:22:00+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -317,10 +317,10 @@
         },
         {
             "name": "koodimonni-language/core-en_gb",
-            "version": "6.0",
+            "version": "6.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/6.0/en_GB.zip"
+                "url": "https://downloads.wordpress.org/translation/core/6.0.1/en_GB.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
