@@ -30,7 +30,12 @@
         "forum": "https://discourse.roots.io/category/bedrock"
     },
     "config": {
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true,
+            "koodimonni/composer-dropin-installer": true
+        }
     },
     "repositories": [
         {
@@ -48,6 +53,8 @@
     ],
     "require": {
         "php": ">=7.1",
+        "php-http/guzzle7-adapter": "*",
+        "alphagov/notifications-php-client": "*",
         "composer/installers": "*",
         "vlucas/phpdotenv": "^2.0.1",
         "johnpbloch/wordpress": "*",
@@ -61,8 +68,7 @@
         "ministryofjustice/wp-user-roles": "*",
         "ministryofjustice/cookie-compliance-for-wordpress": "*",
         "ministryofjustice/wp-moj-components": "*",
-        "wpackagist-plugin/wp-analytify":"*",
-        "wpackagist-plugin/analytify-analytics-dashboard-widget":"*"
+        "ministryofjustice/wp-gov-uk-notify": "*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.5.1"
