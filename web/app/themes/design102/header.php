@@ -34,7 +34,7 @@ wp_body_open();
     <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
 </div>
 <![endif]-->
-<nav class="navbar navbar-expand-md fixed-top navbar-light">
+<nav class="navbar navbar-expand-md sticky-top navbar-light">
     <div class="l-page-container">
         <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
             <img src="<?= Extras\asset_url('images/d102-logo.svg') ?>" alt="Design102"/>
